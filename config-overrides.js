@@ -1,8 +1,13 @@
-const { getBabelLoader } = require("react-app-rewired");
-module.exports = (config, _env) => {
-  const babelLoader = getBabelLoader(config.module.rules);
+/* eslint-disable @typescript-eslint/no-var-requires */
+const { getBabelLoader } = require('customize-cra');
+const hotLoader = require('react-app-rewire-hot-loader');
+const math = require('remark-math');
+const katex = require('rehype-katex');
+
+module.exports = (config, env) => {
+  const babelLoader = getBabelLoader(config);
   config.module.rules.map(rule => {
-    if (typeof rule.test !== "undefined" || typeof rule.oneOf === "undefined") {
+    if (typeof rule.test !== 'undefined' || typeof rule.oneOf === 'undefined') {
       return rule;
     }
 
@@ -13,11 +18,23 @@ module.exports = (config, _env) => {
           loader: babelLoader.loader,
           options: babelLoader.options
         },
-        "@mdx-js/loader"
+        {
+          loader: '@mdx-js/loader',
+          options: {
+            remarkPlugins: [math],
+            rehypePlugins: [[katex, { fleqn: true }]]
+          }
+        }
       ]
     });
 
     return rule;
   });
+
+  config = hotLoader(config, env);
+  config.resolve.alias = {
+    ...config.resolve.alias,
+    'react-dom': '@hot-loader/react-dom'
+  };
   return config;
 };
