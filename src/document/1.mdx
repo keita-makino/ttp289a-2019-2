@@ -2,8 +2,47 @@
 
 ## 1.
 
-hogehogheog
+Assume that the old and new log-likelihood, which is respectively built by $K$ and $K+M$ variable are
 
 $$
-\mathcal{L}
+\mathcal{L}(\hat{\beta_{new}}) = \mathcal{L}(\hat{\beta_{old}}) + d
 $$
+
+Then,
+
+$$
+\bar{\rho}_{new}^2 > \bar{\rho}_{new}^2 \\
+\Leftrightarrow 1 - \frac{[\mathcal{L}(\hat{\beta_{old}}) + d - K - M]}{\mathcal{L}(0)} > 1 - \frac{[\mathcal{L}(\hat{\beta_{old}}) - K]}{\mathcal{L}(0)} \\
+\Leftrightarrow \mathcal{L}(\hat{\beta_{old}}) + d - K - M > \mathcal{L}(\hat{\beta_{old}}) - K \text{ (} \mathcal{L}(0) < 0\text{ )}\\
+\Leftrightarrow d > M
+$$
+
+## 2.
+
+The log-likelihood of market share model can be written as:
+
+$$
+\begin{aligned}
+  \mathcal{L}(\text{MS}) &= \sum_n[y_{in} ln(P_i) + (1 - y_{in}) ln(1 - P_i)] \\
+  &= ln(P_i) \sum_n{y_{in}} + ln(1 - P_i) \sum_n{1 - y_{in}} \\
+  &= N_i ln(P_i) + (N - N_i) ln(1 - P_i)
+\end{aligned}
+$$
+
+To maximize this, the condition in the first derivative must be satisfied.
+
+$$
+  \mathcal{L'}(\text{MS}) = \frac{N_i}{P_i} - \frac{(N - N_i)}{1 - P_i} = 0 \\
+  \Leftrightarrow N_i (1 - P_i) = (N - N_i) P_i \\
+  \Leftrightarrow N_i = N P_i \\
+  \Leftrightarrow P_i = N_i / N
+$$
+
+The second derivative is
+
+$$
+  \mathcal{L''}(\text{MS}) = - \frac{N_i}{P_i^2} - \frac{(N - N_i)}{(1 - P_i)^2}
+$$
+
+Given that $N_i, P_i^2, (N - N_i)$ and $(1 - P_i)^2$ is positive, this is always negative.
+It indicates that the extremum given by $P_i = N_i / N$ is the maximum.
