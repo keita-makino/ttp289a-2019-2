@@ -1,0 +1,50 @@
+import Regression from '../components/Regression';
+import data from '../data/data.json';
+
+# Part 2
+
+## 3.
+
+The market share model has the following structure:
+
+$$
+\begin{cases}
+  U_{Tn} = \alpha_T + \epsilon_{Tn} \\
+  U_{Cn} = \epsilon_{Cn}
+\end{cases}
+$$
+
+Where $U_Tn, U_Nn, \epsilon_Tn$ and $\epsilon_Nn$ is respectively represents the utility function of alternative $T$ (telecommuting), that of alternative $C$ (commuting), and two random variables for the two alternatives to the individual $n ~ (1 < n < 337)$.  
+Another term $\alpha$ stands for the alternative-specific constant (bias) factor.
+
+<Regression
+  type={'logit'}
+  data={data}
+  input={[]}
+  table={{ title: 'Table 1. Market Share Model' }}
+/>
+
+## 4.
+
+The log-likelihood of EL model can be written as:
+
+$$
+\begin{aligned}
+\mathcal{L}_{EL} &= \sum_{i=1}^{337} \left(y_{in} ln\left(\frac{1}{2}\right) + (1 - y_{in}) ln\left(\frac{1}{2}\right)\right) \\
+&= ln\left(\frac{1}{2}\right) \sum_{i=1}^{337} (1) \\
+&= 337 ln\left(\frac{1}{2}\right) \\
+&= -233.6
+\end{aligned}
+$$
+
+The log-likelihood of MS model is:
+
+$$
+\begin{aligned}
+\mathcal{L}_{MS} &= \sum_{i=1}^{337} \left(y_{in} ln\left(\frac{146}{337}\right) + (1 - y_{in}) ln\left(\frac{191}{337}\right)\right) \\
+&= ln\left(\frac{146}{337}\right) \sum_{i=1}^{337} (y_{in}) + ln\left(\frac{191}{337}\right) \sum_{i=1}^{337} (1 - y_{in}) \\
+&= 146 ln\left(\frac{146}{337}\right) + 191 ln\left(\frac{191}{337}\right) \\
+&= -122.13 -108.45  \\
+&= -230.6
+\end{aligned}
+$$

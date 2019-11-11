@@ -1,0 +1,96 @@
+import Regression from '../components/Regression';
+import data from '../data/data.json';
+import getValidResponses from '../utils/getValidResponses';
+import { jStat } from 'jstat';
+
+export const indices = getValidResponses([
+  'OVERTIME',
+  'EFACT9',
+  'EFACT6',
+  'MANCONST',
+  'JOBCONST',
+  'TECHCONS',
+  'CSO9FT2'
+]);
+
+## 5.
+
+The details of a logit model with the same variables referred in Mokhtarian and Salomon (1996) is shown below. We will refer to this model as Basic Model (BS Model) hereafter.
+
+<Regression
+  type={'logit'}
+  data={indices.map(item => data[item])}
+  input={[
+    { name: 'OVERTIME', location: 0, type: 'ASV' },
+    { name: 'EFACT9', location: 0, type: 'ASV' },
+    { name: 'EFACT6', location: 0, type: 'ASV' },
+    { name: 'MANCONST', location: 0, type: 'ASV' },
+    { name: 'JOBCONST', location: 0, type: 'ASV' },
+    { name: 'TECHCONS', location: 0, type: 'ASV' },
+    { name: 'CSO9FT2', location: 0, type: 'ASV' }
+  ]}
+  table={{ title: 'Table 2. Basic Logit Model' }}
+/>
+
+Looking at the outcome, there are a few variables that have been identified as non-significant due to smaller absolute of t-value. In the original paper, both number of overtime hours and technology constraint had an absolute greater than zero, which indicated that those variables were significant.
+
+Here, the significance of a variable is computed with the following equation.
+
+$$
+\text{(p-value of coefficient } \beta \text{)} = 2 \times \Phi(-|t(\hat{\beta})|) = 2 \times \Phi\left( \frac{-|\hat{\beta}|}{SE(\hat{\beta})} \right)
+$$
+
+where $\Phi$ stands for the cumulative distribution function of standard normal distribution, $t(\hat{\beta})$ is the t-value of the corresponding coefficient, and $SE(\hat{\beta})$ is the standard error of the estimator. Note that we approximated t-distribution to normal distribution as the sample size is large enough.
+
+The log-likelihood of this model is much larger than that of MS model shown in section 3. To test this difference is statistically significant, we can perform a Chi-Squared test, which can be written as:
+
+$$
+\begin{cases}
+  H_0 \text{: There is no difference between the MS model and BS model} \\
+  H_1 \text{: BS model is better}
+\end{cases}
+$$
+
+The likelihood-ratio ($LR$) is
+
+$$
+LR = -2(\mathcal{BS} - \mathcal{MS})
+$$
+
+Under hypothesis $H_0$, this statistic has a chi-squared distribution with $K - 1$ (= number of variables in BS Model - 1) degree of freedom.
+
+The log-likelihood of MS model with the same dataset (N=333) is shown below.
+
+<Regression
+  type={'logit'}
+  data={indices.map(item => data[item])}
+  input={[]}
+  table={{ title: 'Table 3. Market Share Model' }}
+/>
+
+Thus, the statistic is:
+
+export const PVal = x => (
+  <React.Fragment>{1 - jStat.chisquare.cdf(x, 7)}</React.Fragment>
+);
+
+$$
+LR = -2(\mathcal{BS} - \mathcal{MS}) = -2(-228.034 + 141.395) = 172.278
+$$
+
+$\text{(p-value)} =$<PVal x={{172.278}}/> ($<1.0e-16$)
+
+<Regression
+  type={'probit'}
+  data={indices.map(item => data[item])}
+  input={[
+    { name: 'OVERTIME', location: 0, type: 'ASV' },
+    { name: 'EFACT9', location: 0, type: 'ASV' },
+    { name: 'EFACT6', location: 0, type: 'ASV' },
+    { name: 'MANCONST', location: 0, type: 'ASV' },
+    { name: 'JOBCONST', location: 0, type: 'ASV' },
+    { name: 'TECHCONS', location: 0, type: 'ASV' },
+    { name: 'CSO9FT2', location: 0, type: 'ASV' }
+  ]}
+  table={{ title: 'Table 3. Basic Probit Model' }}
+/>

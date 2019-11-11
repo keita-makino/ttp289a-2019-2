@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.6.0",
     "@types/jest": "24.0.21",
     "@types/node": "12.12.5",
     "@types/react": "16.9.11",
@@ -43,12 +44,14 @@
     "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-prettier": "^3.1.1",
     "husky": "^3.0.9",
+    "jstat": "^1.9.2",
     "katex": "^0.11.1",
     "license-checker": "^25.0.1",
     "lint-staged": "^9.4.2",
     "prettier": "^1.18.2",
     "react-app-rewire-hot-loader": "^2.0.1",
     "react-app-rewired": "^2.1.5",
+    "react-hooks-global-state": "^0.16.0",
     "react-hot-loader": "^4.12.15",
     "rehype-katex": "^2.0.0",
     "remark-math": "^2.0.0"

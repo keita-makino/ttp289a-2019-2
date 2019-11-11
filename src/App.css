@@ -1,10 +1,8 @@
-.App {
+p {
+  text-align: justify;
+  text-justify: inter-ideograph;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-link {
-  color: #09d3ac;
+.katex {
+  font-size: 1rem !important;
 }

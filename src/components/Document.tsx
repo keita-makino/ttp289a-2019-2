@@ -1,11 +1,14 @@
 import React from 'react';
 import One from '../document/1.mdx';
+import Two from '../document/2.mdx';
+import Three from '../document/3.mdx';
 
 type PropsBase = {};
 export const defaultValue = {};
-const PropsDefault: Required<
-  Pick<PropsBase, { [Key in keyof PropsBase]-?: Key }[keyof PropsBase]>
-> = defaultValue;
+const PropsDefault: Required<Pick<
+  PropsBase,
+  { [Key in keyof PropsBase]-?: Key }[keyof PropsBase]
+>> = defaultValue;
 type Props = PropsBase & typeof PropsDefault;
 
 export { defaultValue as documentDefaultValue };
@@ -17,6 +20,8 @@ const Document: React.FC<Props> = (_props: PropsBase) => {
   return (
     <>
       <One />
+      <Two />
+      <Three />
     </>
   );
 };
