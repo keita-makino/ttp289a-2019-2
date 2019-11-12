@@ -22,11 +22,10 @@ Overall, the coefficients and significance are similar to the logit model. (Note
     { name: 'CSO9FT2', location: 0, type: 'ASV' }
   ]}
   table={{ title: 'Table 5. Basic Probit Model' }}
-  outPlot={{ title: 'Figure 2. Estimate by Basic Probit Model' }}
+  outPlot={{ title: 'Figure 3. Estimate by Basic Probit Model' }}
 />
 
-The market share based on this model was estimated as $155/333 = 46.5%$, whereas in truth it is $145/333 = 43.5%$.  
-Considering the sample size of about 300, it seems fair amount of the error.
+The market share based on this model was estimated as $155/333 = 46.5%$, whereas in truth it is $145/333 = 43.5%$. Considering the sample size of about 300, it seems fair amount of the error.
 
 ## 8.
 
@@ -38,4 +37,50 @@ To compare the effect of variables, we will always include the same set of varia
 
 Before selecting the variable in the models, we will go though some general assumptions in the variables.
 
-Firstly, there should be some varibles whose coefficient will significantly differ between MA and FE model. As Mokhtarian et al. (1998) discussed, having children under six significantly have different effect on the occupation of male and female workers. 
+Firstly, there should be some varibles whose coefficient will significantly differ between MA and FE model. As Mokhtarian et al. (1998) discussed, having children under six significantly have different effect on the occupation of male and female workers. It also refers to the difference in the effect of distractions from household. In our dataset, variable "CHILDLT6 (children less than 6 years of age present in the home)" represents the first idea, and "EFACT1 (family / community directed)" may be relevant to the second concept.
+
+Next, it is also important to consider the variables which are significance to both of the gruops. Huws (1996) has listed autonomy in work, saving travel time and time flexibility are typical common advantages among the both genders. In our dataset, variable "COMMTIME (commute time)", "EFACT9 (commute stress)", "EFACT7 (internal control)" would be related to this idea.
+
+Looking at the dataset itself, there are several variables that would directly associate with the outcome as being telecommuting. For example, "MANDPRV (management disapproves)" will make a fatally negative effect for having a telework. Also, "UNAWARE (person is unaware of telecommuting)" and "JOBHOME (some part of the job can be done from home)" will generally have a strong effect to the outcome. The variables "MANCONST (lack of manager support as a dichotomous constraint)", "JOBCONST (job unsuitability as a dichotomous constraint)", "TECHCONS (the more things needed, the higher the technology constraint)" and "CSO9FT2 (office discipline)", which are used in the previous BS models will also equally worth for both genders.
+
+Another important topic is to find variables whose significance may differ between genders. Note that this does not necessarily mean the coefficient of the variable would differ between the two models. At this point, Huws also suggested that having children, again, will have a different significance between two groups, as the level of interruption by children will be different. They also mentioned that two gender groups tend to evaluate several advantage / disadvantage, such as comfort, variety of work, irregular payment or time pressure, in different manner. Our data set have several corresponding variables such as "CSO9FT9 (stress)" (note that this is different from commute stress) or "EFACT2 (lack of control)".
+
+Based on the argument above, we have compiled several hypotheses as shown below.
+
+$$
+\begin{cases}
+  H_{[a]0}: \text{The magnitude of effect by [a] does not significantly differ between male and female.} \\
+  H_{[a]1}: H_{00} \text{ is not true.} \\
+\end{cases}
+$$
+
+$$
+\begin{cases}
+  H_{[b]0}: \text{The importance of effect by [b] does not differ between male and female.} \\
+  H_{[b]1}: H_{00} \text{ is not true.} \\
+\end{cases}
+$$
+
+The first hypothesis tests whether there is a significant difference in magnitude of coefficient between two models. We will plug in "CHILDLT6" and "EFACT1" into [a].
+
+The second one examines the difference in importance between the two models. Here, the condition of a variable being important will be satisfied if it is significant and its corresponding coefficient is high-magnitude. We will pulg in "COMMTIME", "EFACT9", "MANDPRV", "UNAWARE", "JOBHOME", "MANCONST", "JOBCONST", "TECHCONS", "CSO9FT2" and "CHILDLT6" into this hypothesis. If there is a significant difference, we will further examine if the importance is to the same direction (e.g., positive / negative for both gender), opposite direction and the magnitude of coefficients.
+
+---
+
+First of all, we have initialized the first MA and FE models, namely FMA and FFE model with all the 12 variables referred above and bias term. The result of logistic regression is:
+
+<Regression
+  type={'logit'}
+  data={indices.map(item => data[item])}
+  input={[
+    { name: 'OVERTIME', location: 0, type: 'ASV' },
+    { name: 'EFACT9', location: 0, type: 'ASV' },
+    { name: 'EFACT6', location: 0, type: 'ASV' },
+    { name: 'MANCONST', location: 0, type: 'ASV' },
+    { name: 'JOBCONST', location: 0, type: 'ASV' },
+    { name: 'TECHCONS', location: 0, type: 'ASV' },
+    { name: 'CSO9FT2', location: 0, type: 'ASV' }
+  ]}
+  table={{ title: 'Table 5. Basic Probit Model' }}
+  outPlot={{ title: 'Figure 3. Estimate by Basic Probit Model' }}
+/>
