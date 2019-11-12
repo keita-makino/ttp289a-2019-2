@@ -11,6 +11,7 @@ import * as tf from '@tensorflow/tfjs';
 
 import useRegression from '../utils/useRegression';
 import dictionary from '../data/dictionary.json';
+import Chart from './Chart';
 
 type Props = {
   type: 'logit' | 'probit';
@@ -21,10 +22,17 @@ type Props = {
     type?: string;
   }[];
   table: Table;
+  outPlot: OutPlot;
 };
 
 type Table = {
   title: string;
+};
+
+type OutPlot = {
+  title: string;
+  x: string;
+  y: string;
 };
 
 const getP = (t: string) => {
@@ -69,7 +77,7 @@ const Regression: React.FC<Props> = (props: Props) => {
                   </TableCell>
                   <TableCell>S.D. (var)</TableCell>
                   <TableCell>Mean (var)</TableCell>
-                  <TableCell>Coefficient</TableCell>
+                  <TableCell>Estimate</TableCell>
                   <TableCell>t-Sta.</TableCell>
                 </TableRow>
               </TableHead>
@@ -106,27 +114,41 @@ const Regression: React.FC<Props> = (props: Props) => {
                   <TableCell>log-likelihood</TableCell>
                   <TableCell>-</TableCell>
                   <TableCell>-</TableCell>
-                  <TableCell>-</TableCell>
                   <TableCell>
                     -{parseFloat(lastState.loss).toFixed(3)}
                   </TableCell>
+                  <TableCell>-</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>r-squared</TableCell>
                   <TableCell>-</TableCell>
                   <TableCell>-</TableCell>
-                  <TableCell>-</TableCell>
                   <TableCell>{stats.rho}</TableCell>
+                  <TableCell>-</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>adj. r-squared</TableCell>
                   <TableCell>-</TableCell>
                   <TableCell>-</TableCell>
-                  <TableCell>-</TableCell>
                   <TableCell>{stats.rho2}</TableCell>
+                  <TableCell>-</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
+          );
+        }
+      })()}
+      <br />
+      {(() => {
+        if (props.outPlot !== undefined) {
+          return (
+            <Chart
+              title={props.outPlot.title}
+              output={lastState.estimate}
+              truth={props.data.map(item =>
+                item['C3H17M'] === 1 ? 'true' : 'false'
+              )}
+            ></Chart>
           );
         }
       })()}

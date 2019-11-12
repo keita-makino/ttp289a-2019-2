@@ -30,6 +30,7 @@ The details of a logit model with the same variables referred in Mokhtarian and 
     { name: 'CSO9FT2', location: 0, type: 'ASV' }
   ]}
   table={{ title: 'Table 2. Basic Logit Model' }}
+  outPlot={{ title: 'Figure 1. Estimate by Basic Logit Model' }}
 />
 
 Looking at the outcome, there are a few variables that have been identified as non-significant due to smaller absolute of t-value. In the original paper, both number of overtime hours and technology constraint had an absolute greater than zero, which indicated that those variables were significant.
@@ -68,29 +69,58 @@ The log-likelihood of MS model with the same dataset (N=333) is shown below.
   table={{ title: 'Table 3. Market Share Model' }}
 />
 
-Thus, the statistic is:
+Thus, the statistic
 
-export const PVal = x => (
-  <React.Fragment>{1 - jStat.chisquare.cdf(x, 7)}</React.Fragment>
-);
+export const PVal = props => {
+  console.log(1 - jStat.chisquare.cdf(props.x, 7));
+  return <></>;
+};
+
+<PVal x={172.278} />
 
 $$
-LR = -2(\mathcal{BS} - \mathcal{MS}) = -2(-228.034 + 141.395) = 172.278
+LR = -2(\mathcal{L}_{BS} - \mathcal{L}_{MS}) = -2(-228.034 + 141.395) = 172.278 \\
+\text{(p-value)} < 1.0e-16
 $$
 
-$\text{(p-value)} =$<PVal x={{172.278}}/> ($<1.0e-16$)
+indicates that the new BS model is significantly better than the MS model.
+
+The bias (constant) term has been drastically increased from the MS model. This is because, in the BS model, an observation whose all the $X$ values are zero already has a certain information.  
+Looking at the S.D. and mean of the variables, for example, number of overtimes hours have its mean at 3.907. This means that a survey participant who has the variable at zero hours causes some marginal effect. The same principle applies to other variables, leading that a zero vector of variables does no longer mean "neutral" but somehow "characteristic" property of an observation.
+
+## 6.
+
+The market share probit model has the following structure:
+
+$$
+V_T = \alpha \\
+P_T = \Phi\left( \sqrt{3} V_T / \pi \right) = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\sqrt{3} V_T / \pi}\exp\left(\frac{-u^2}{2}\right)du = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\sqrt{3}\alpha / \pi}\exp\left(\frac{-u^2}{2}\right)du
+$$
+
+where $V_{Tn}$ is the deterministic part of the utility function, and $P_T{n}$ is the probability that a survey participant will choose telecommuting. Note that we assume a standard deviation $\sigma = \pi / \sqrt{3}$ to make the coefficient comparable to the logit models.
+
+Similar to the market share logit model, the probability of choosing telecommuting is not depending on the property of the participants and become constant (note there are no variable in the most-right term of the probability.)
+
+The details of the model is shown below.
 
 <Regression
   type={'probit'}
-  data={indices.map(item => data[item])}
-  input={[
-    { name: 'OVERTIME', location: 0, type: 'ASV' },
-    { name: 'EFACT9', location: 0, type: 'ASV' },
-    { name: 'EFACT6', location: 0, type: 'ASV' },
-    { name: 'MANCONST', location: 0, type: 'ASV' },
-    { name: 'JOBCONST', location: 0, type: 'ASV' },
-    { name: 'TECHCONS', location: 0, type: 'ASV' },
-    { name: 'CSO9FT2', location: 0, type: 'ASV' }
-  ]}
-  table={{ title: 'Table 3. Basic Probit Model' }}
+  data={data}
+  input={[]}
+  table={{ title: 'Table 4. Market Share Probit Model' }}
 />
+
+Given the bias $\alpha = -0.305$, we can derive
+
+export const PhiVal = props => {
+  console.log(jStat.normal.cdf(props.x, 0, Math.PI / Math.sqrt(3)));
+  return <></>;
+};
+
+<PhiVal x={-0.305} />
+
+$$
+P_T = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{-0.305 \sqrt{3} / \pi}\exp\left(\frac{-u^2}{2}\right)du = 0.433
+$$
+
+that matches the tru market share $146/337$.

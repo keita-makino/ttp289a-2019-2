@@ -4,6 +4,7 @@ type History = {
   weights: string[];
   bias: string;
   loss: string;
+  estimate: string[];
 };
 
 const useRegression = (
@@ -78,18 +79,18 @@ const useRegression = (
     if (type === 'probit') {
       return weights
         .matMul(x)
+        .as1D()
         .add(bias)
         .div(Math.sqrt(2))
         .erf()
         .add(1)
-        .div(2)
-        .as1D();
+        .div(2);
     } else {
       return weights
         .matMul(x)
+        .as1D()
         .add(bias)
-        .sigmoid()
-        .as1D();
+        .sigmoid();
     }
   };
 
@@ -117,10 +118,19 @@ const useRegression = (
               .dataSync()
           ).map(item => item.toFixed(3)),
           bias: bias
+            .sub(
+              tf
+                .tensor(returnValue.means)
+                .mul(weights.div(tf.tidy(() => tf.tensor(returnValue.sds))))
+                .sum()
+            )
             .mul(type === 'probit' ? Math.PI / Math.sqrt(3) : 1)
             .dataSync()[0]
             .toFixed(3),
-          loss: currentLoss.dataSync()[0].toFixed(6)
+          loss: currentLoss.dataSync()[0].toFixed(6),
+          estimate: (u(x).arraySync() as number[]).map(item =>
+            item >= 0.5 ? 'true' : 'false'
+          )
         } as History);
         if (index > 10) {
           if (

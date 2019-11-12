@@ -1,0 +1,38 @@
+import Regression from '../components/Regression';
+import data from '../data/data.json';
+import getValidResponses from '../utils/getValidResponses';
+import { jStat } from 'jstat';
+import { indices } from './3.mdx';
+
+## 7.
+
+The table below shows the details of the probit model which has corresponding variables to BS model used in section 5.
+Overall, the coefficients and significance are similar to the logit model. (Note that, same to section 6. we have used the standard deviation $\sigma = \pi / \sqrt{3}$).
+
+<Regression
+  type={'probit'}
+  data={indices.map(item => data[item])}
+  input={[
+    { name: 'OVERTIME', location: 0, type: 'ASV' },
+    { name: 'EFACT9', location: 0, type: 'ASV' },
+    { name: 'EFACT6', location: 0, type: 'ASV' },
+    { name: 'MANCONST', location: 0, type: 'ASV' },
+    { name: 'JOBCONST', location: 0, type: 'ASV' },
+    { name: 'TECHCONS', location: 0, type: 'ASV' },
+    { name: 'CSO9FT2', location: 0, type: 'ASV' }
+  ]}
+  table={{ title: 'Table 5. Basic Probit Model' }}
+  outPlot={{ title: 'Figure 2. Estimate by Basic Probit Model' }}
+/>
+
+The market share based on this model was estimated as $155/333 = 46.5%$, whereas in truth it is $145/333 = 43.5%$.  
+Considering the sample size of about 300, it seems fair amount of the error.
+
+## 8.
+
+In the last, we will develop two new models that have some additional variables or features.  
+Those models respectively estimates the working situation (telecommuting or homecommuting) in same group of gender (male or female).
+
+To compare the effect of variables, we will always include the same set of variables in both of the models.
+
+### Hypotheses
