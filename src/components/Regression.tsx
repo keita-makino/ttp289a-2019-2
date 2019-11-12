@@ -133,6 +133,12 @@ const Regression: React.FC<Props> = (props: Props) => {
                   <TableCell>{stats.rho2}</TableCell>
                   <TableCell>-</TableCell>
                 </TableRow>
+                <TableRow>
+                  <TableCell colSpan={5}>
+                    t-Statistic with * indicates that it is significant with 95%
+                    confidential level
+                  </TableCell>
+                </TableRow>
               </TableBody>
             </Table>
           );

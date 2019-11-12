@@ -55,7 +55,7 @@ $$
 The likelihood-ratio ($LR$) is
 
 $$
-LR = -2(\mathcal{BS} - \mathcal{MS})
+LR = -2(\mathcal{MS} - \mathcal{BS})
 $$
 
 Under hypothesis $H_0$, this statistic has a chi-squared distribution with $K - 1$ (= number of variables in BS Model - 1) degree of freedom.
@@ -72,14 +72,18 @@ The log-likelihood of MS model with the same dataset (N=333) is shown below.
 Thus, the statistic
 
 export const PVal = props => {
-  console.log(1 - jStat.chisquare.cdf(props.x, 7));
+  const p = 1 - jStat.chisquare.cdf(props.x, 7)
+  console.log(p);
+  if (p === "0") {
+    console.log("p-value is less than 1.0e-16")
+  }
   return <></>;
 };
 
 <PVal x={172.278} />
 
 $$
-LR = -2(\mathcal{L}_{BS} - \mathcal{L}_{MS}) = -2(-228.034 + 141.395) = 172.278 \\
+LR = -2(\mathcal{L}_{MS} - \mathcal{L}_{BS}) = -2(-228.034 + 141.395) = 172.278 \\
 \text{(p-value)} < 1.0e-16
 $$
 
