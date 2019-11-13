@@ -106,7 +106,7 @@ const useRegression = (
       (type === 'probit' ? Math.PI / Math.sqrt(3) : 1)
   );
 
-  for (let index = 0; index < 250; index++) {
+  for (let index = 0; index < 500; index++) {
     optimizer.minimize(
       () => {
         const currentLoss = loss(u(x), y);
@@ -137,7 +137,7 @@ const useRegression = (
             returnValue.history[returnValue.history.length - 1].loss ===
             returnValue.history[returnValue.history.length - 11].loss
           ) {
-            index = 250;
+            index = 500;
           }
         }
         if (index % 25 === 0) {

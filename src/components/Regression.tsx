@@ -69,7 +69,7 @@ const Regression: React.FC<Props> = (props: Props) => {
           return (
             <Table size="small">
               <TableHead>
-                <TableRow>
+                <TableRow style={{ backgroundColor: '#AAAAAA' }}>
                   <TableCell>
                     <b>
                       {props.table.title} (N={props.data.length})
@@ -105,38 +105,36 @@ const Regression: React.FC<Props> = (props: Props) => {
                           <TableCell>{item}</TableCell>
                           <TableCell>
                             {stats.tValue[index + 1]}
-                            {getP(stats.tValue[index + 1]) < 0.05 ? '*' : null}
+                            {getP(stats.tValue[index + 1]) < 0.05
+                              ? '**'
+                              : getP(stats.tValue[index + 1]) < 0.1
+                              ? '*'
+                              : null}
                           </TableCell>
                         </TableRow>
                       );
                     })}
-                <TableRow>
+                <TableRow style={{ backgroundColor: '#DDDDDD' }}>
+                  <TableCell rowSpan={2}>Statistics</TableCell>
                   <TableCell>log-likelihood</TableCell>
-                  <TableCell>-</TableCell>
-                  <TableCell>-</TableCell>
                   <TableCell>
                     -{parseFloat(lastState.loss).toFixed(3)}
                   </TableCell>
-                  <TableCell>-</TableCell>
+                  <TableCell>log-likelihood(EL)</TableCell>
+                  <TableCell>
+                    -{(Math.log(2) * props.data.length).toFixed(3)}
+                  </TableCell>
                 </TableRow>
-                <TableRow>
+                <TableRow style={{ backgroundColor: '#DDDDDD' }}>
                   <TableCell>r-squared</TableCell>
-                  <TableCell>-</TableCell>
-                  <TableCell>-</TableCell>
                   <TableCell>{stats.rho}</TableCell>
-                  <TableCell>-</TableCell>
-                </TableRow>
-                <TableRow>
                   <TableCell>adj. r-squared</TableCell>
-                  <TableCell>-</TableCell>
-                  <TableCell>-</TableCell>
                   <TableCell>{stats.rho2}</TableCell>
-                  <TableCell>-</TableCell>
                 </TableRow>
-                <TableRow>
+                <TableRow style={{ backgroundColor: '#DDDDDD' }}>
                   <TableCell colSpan={5}>
-                    t-Statistic with * indicates that it is significant with 95%
-                    confidential level
+                    t-Statistic with ** / * indicates that it is significant
+                    with 95% / 90% confidential level
                   </TableCell>
                 </TableRow>
               </TableBody>

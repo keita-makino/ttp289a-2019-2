@@ -1,14 +1,14 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const checker = require("license-checker");
-const fs = require("fs");
+const checker = require('license-checker');
+const fs = require('fs');
 
 checker.init(
   {
-    start: "./",
+    start: './',
     customFormat: {
-      licenses: "",
-      repository: "",
-      licenseText: ""
+      licenses: '',
+      repository: '',
+      licenseText: ''
     }
   },
   (error, packages) => {
@@ -16,7 +16,7 @@ checker.init(
       console.log(error);
     } else {
       fs.writeFile(
-        "./license/statements.json",
+        './license/statements.json',
         JSON.stringify(packages),
         error => {
           console.log(error);

@@ -10,17 +10,21 @@ import {
 } from 'react-vis';
 import { Box } from '@material-ui/core';
 import data from '../data/data.json';
+import dictionary from '../data/dictionary.json';
 
-type Props = { label: string; title: string };
+type Props = { label: string; title: string; caption: string };
 
 const getFreq = (data: number[], xMin: number, xMax: number) => {
-  const segment = 8;
+  const uniques = data.filter(
+    (item, index, array) => array.indexOf(item) === index
+  );
+  const segment = Math.min(8, Math.max(uniques.length - 1, 1));
   const diff = (xMax - xMin) / segment;
   const thresholds = Array(segment + 1)
     .fill(0)
     .map((_item, index) => xMin + ((xMax - xMin) * index) / segment);
   return thresholds.map((item, index, array) => ({
-    x: item,
+    x: segment < 3 ? (item === 1 ? 'true' : 'false') : item,
     y: data.filter((item2: number) => {
       if (index < array.length - 1) {
         return item2 >= item && item2 < item + diff;
@@ -61,6 +65,7 @@ const Bar: React.FC<Props> = (props: Props) => {
           width={720}
           height={360}
           margin={{ left: 85, bottom: 65, right: 25 }}
+          xType={freqM.length < 8 ? 'ordinal' : undefined}
         >
           <VerticalGridLines />
           <HorizontalGridLines />
@@ -88,10 +93,17 @@ const Bar: React.FC<Props> = (props: Props) => {
         </XYPlot>
         <Box margin={'0.25rem'}>
           <b>
-            {props.title} of {props.label} (N(Male) ={' '}
-            {freqM.reduce((acc, cur) => acc + cur.y, 0)}, N(Female) ={' '}
+            {props.title} of "
+            {dictionary[props.label as keyof typeof dictionary]}" (N(Male) ={' '}
+            {freqM.reduce((acc, cur) => acc + cur.y, 0)}, N(Female) =
             {freqF.reduce((acc, cur) => acc + cur.y, 0)})
           </b>
+          {props.caption ? (
+            <>
+              <br />
+              <span>{props.caption}</span>
+            </>
+          ) : null}
         </Box>
       </Box>
     </>

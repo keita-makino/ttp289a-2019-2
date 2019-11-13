@@ -60,7 +60,7 @@
   "husky": {
     "hooks": {
       "pre-commit": [
-        "lint-staged && node license/exportStatements --json --out license/statement.json --customPath license/statementConfig.json"
+        "lint-staged && node license/exportStatements && git add license/."
       ]
     }
   },

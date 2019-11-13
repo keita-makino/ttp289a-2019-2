@@ -25,10 +25,10 @@
   "EFACT6": "Misunderstanding",
   "EFACT4": "Workaholic",
   "C1CONT": "Job suitability as a continuous facilitator of telecommuting",
-  "JOBCONST": "Job unsuitability as a dichotomous constraint",
-  "MANCONST": "Lack of manager support as a dichotomous constraint",
+  "JOBCONST": "Job unsuitability",
+  "MANCONST": "Lack of manager support",
   "SELFDRIV": "Individual has a driver's license",
-  "TECHCONS": "The more things needed, the higher the technology constraint",
+  "TECHCONS": "Technology constraint",
   "C1CONTC": "Job suitability as a continuous facilitator of center telecommuting",
   "C1CONTH": "Job suitability as a continuous facilitator of home telecommuting",
   "C2CONT": "Manager support as a continuous facilitator of telecommuting",
@@ -52,7 +52,7 @@
   "F2HWPLDI": "Distance between home and workplace",
   "F3HWPLMI": "Travel time from workplace to home",
   "F4WPLHMI": "Travel time from home to workplace",
-  "F8AGEGR": "Age category",
+  "F8AGEGR": "Age group",
   "F9HHSIZ": "HH size",
   "F10LT2": "Children under two in HH",
   "F10B6_15": "Children between six and fifteen in HH",
@@ -66,5 +66,8 @@
   "F16INCOM": "Income level",
   "DISTANCE": "Distance of travel in one working day",
   "F7SEX": "Gender",
-  "B4OCCUP": "Occupation type"
+  "B4OCCUP": "Occupation type",
+  "TECHCONSB": "Technology constraint (binary grouping)",
+  "AGE": "Age (binary grouping)",
+  "INCOM": "Income (binary grouping)"
 }

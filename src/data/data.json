@@ -68,15 +68,9 @@
     "DISTANCE": 14,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 11,
@@ -147,15 +141,9 @@
     "DISTANCE": 20,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 1,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 25,
@@ -226,15 +214,9 @@
     "DISTANCE": 12,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 1,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 64,
@@ -305,15 +287,9 @@
     "DISTANCE": 20,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 68,
@@ -384,15 +360,9 @@
     "DISTANCE": 34,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 87,
@@ -463,15 +433,9 @@
     "DISTANCE": 30,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 100,
@@ -542,15 +506,9 @@
     "DISTANCE": 20,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 111,
@@ -621,15 +579,9 @@
     "DISTANCE": 26,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 120,
@@ -700,15 +652,9 @@
     "DISTANCE": 10,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 121,
@@ -779,15 +725,9 @@
     "DISTANCE": 8,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 151,
@@ -858,15 +798,9 @@
     "DISTANCE": 10,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 154,
@@ -937,15 +871,9 @@
     "DISTANCE": 30,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 183,
@@ -1016,15 +944,9 @@
     "DISTANCE": 14,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 184,
@@ -1095,15 +1017,9 @@
     "DISTANCE": 22,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 186,
@@ -1174,15 +1090,9 @@
     "DISTANCE": 20,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 191,
@@ -1253,15 +1163,9 @@
     "DISTANCE": 24,
     "F7SEX": 1,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 192,
@@ -1332,15 +1236,9 @@
     "DISTANCE": 28,
     "F7SEX": 1,
     "B4OCCUP": 4,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 218,
@@ -1411,15 +1309,9 @@
     "DISTANCE": 12,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 227,
@@ -1490,15 +1382,9 @@
     "DISTANCE": 4,
     "F7SEX": 1,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 236,
@@ -1569,15 +1455,9 @@
     "DISTANCE": 12,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 245,
@@ -1648,15 +1528,9 @@
     "DISTANCE": 22,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 263,
@@ -1727,15 +1601,9 @@
     "DISTANCE": 20,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 266,
@@ -1806,15 +1674,9 @@
     "DISTANCE": 20,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 267,
@@ -1885,15 +1747,9 @@
     "DISTANCE": 32,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 268,
@@ -1964,15 +1820,9 @@
     "DISTANCE": 24,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 276,
@@ -2043,15 +1893,9 @@
     "DISTANCE": 50,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 283,
@@ -2122,15 +1966,9 @@
     "DISTANCE": 22,
     "F7SEX": 1,
     "B4OCCUP": 1,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 288,
@@ -2201,15 +2039,9 @@
     "DISTANCE": 14,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 289,
@@ -2280,15 +2112,9 @@
     "DISTANCE": 14,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 291,
@@ -2359,15 +2185,9 @@
     "DISTANCE": 20,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 293,
@@ -2438,15 +2258,9 @@
     "DISTANCE": 0,
     "F7SEX": null,
     "B4OCCUP": 5,
-    "DMAGE3": null,
-    "DMAGE4": null,
-    "DMAGE5": null,
-    "DMAGE6": null,
-    "DMINC2": null,
-    "DMINC3": null,
-    "DMINC4": null,
-    "DMINC5": null,
-    "DMINC6": null
+    "TECHCONSB": 0,
+    "AGE": null,
+    "INCOM": null
   },
   {
     "ID": 315,
@@ -2517,15 +2331,9 @@
     "DISTANCE": 52,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 322,
@@ -2596,15 +2404,9 @@
     "DISTANCE": 30,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 325,
@@ -2675,15 +2477,9 @@
     "DISTANCE": 14,
     "F7SEX": 1,
     "B4OCCUP": 3,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 342,
@@ -2754,15 +2550,9 @@
     "DISTANCE": 14,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 353,
@@ -2833,15 +2623,9 @@
     "DISTANCE": 15,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 363,
@@ -2912,15 +2696,9 @@
     "DISTANCE": 4,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 376,
@@ -2991,15 +2769,9 @@
     "DISTANCE": 34,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 377,
@@ -3070,15 +2842,9 @@
     "DISTANCE": 0.4,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 380,
@@ -3149,15 +2915,9 @@
     "DISTANCE": 24,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 386,
@@ -3228,15 +2988,9 @@
     "DISTANCE": 16,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 391,
@@ -3307,15 +3061,9 @@
     "DISTANCE": 48,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 392,
@@ -3386,15 +3134,9 @@
     "DISTANCE": 26,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 394,
@@ -3465,15 +3207,9 @@
     "DISTANCE": 8,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 407,
@@ -3544,15 +3280,9 @@
     "DISTANCE": 20,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 410,
@@ -3623,15 +3353,9 @@
     "DISTANCE": 30,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": null,
-    "DMINC3": null,
-    "DMINC4": null,
-    "DMINC5": null,
-    "DMINC6": null
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": null
   },
   {
     "ID": 417,
@@ -3702,15 +3426,9 @@
     "DISTANCE": 7,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 426,
@@ -3781,15 +3499,9 @@
     "DISTANCE": 16,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 430,
@@ -3860,15 +3572,9 @@
     "DISTANCE": 44,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 432,
@@ -3939,15 +3645,9 @@
     "DISTANCE": 96,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 443,
@@ -4018,15 +3718,9 @@
     "DISTANCE": 40,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 459,
@@ -4097,15 +3791,9 @@
     "DISTANCE": 20,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 517,
@@ -4176,15 +3864,9 @@
     "DISTANCE": 36,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 518,
@@ -4255,15 +3937,9 @@
     "DISTANCE": 24,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 542,
@@ -4334,15 +4010,9 @@
     "DISTANCE": 6,
     "F7SEX": 1,
     "B4OCCUP": 4,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 544,
@@ -4413,15 +4083,9 @@
     "DISTANCE": 16,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 560,
@@ -4492,15 +4156,9 @@
     "DISTANCE": 20,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 1,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 562,
@@ -4571,15 +4229,9 @@
     "DISTANCE": 18,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 567,
@@ -4650,15 +4302,9 @@
     "DISTANCE": 20,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 582,
@@ -4729,15 +4375,9 @@
     "DISTANCE": 16,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 585,
@@ -4808,15 +4448,9 @@
     "DISTANCE": 32,
     "F7SEX": 1,
     "B4OCCUP": 1,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 592,
@@ -4887,15 +4521,9 @@
     "DISTANCE": 12,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 611,
@@ -4966,15 +4594,9 @@
     "DISTANCE": 12,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 617,
@@ -5045,15 +4667,9 @@
     "DISTANCE": 1,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 618,
@@ -5124,15 +4740,9 @@
     "DISTANCE": 14,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 634,
@@ -5203,15 +4813,9 @@
     "DISTANCE": 6,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 638,
@@ -5282,15 +4886,9 @@
     "DISTANCE": 50,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 1,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 646,
@@ -5361,15 +4959,9 @@
     "DISTANCE": 36,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 652,
@@ -5440,15 +5032,9 @@
     "DISTANCE": 30,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 654,
@@ -5519,15 +5105,9 @@
     "DISTANCE": 40,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 662,
@@ -5598,15 +5178,9 @@
     "DISTANCE": 60,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 672,
@@ -5677,15 +5251,9 @@
     "DISTANCE": 32,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 1,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 693,
@@ -5756,15 +5324,9 @@
     "DISTANCE": 52,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 694,
@@ -5835,15 +5397,9 @@
     "DISTANCE": 8,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 697,
@@ -5914,15 +5470,9 @@
     "DISTANCE": 30,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 698,
@@ -5993,15 +5543,9 @@
     "DISTANCE": 18,
     "F7SEX": 1,
     "B4OCCUP": 1,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 703,
@@ -6072,15 +5616,9 @@
     "DISTANCE": 4,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 704,
@@ -6151,15 +5689,9 @@
     "DISTANCE": 12,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 706,
@@ -6230,15 +5762,9 @@
     "DISTANCE": 1,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 711,
@@ -6309,15 +5835,9 @@
     "DISTANCE": 20,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 715,
@@ -6388,15 +5908,9 @@
     "DISTANCE": 40,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 1,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 722,
@@ -6467,15 +5981,9 @@
     "DISTANCE": 70,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 727,
@@ -6546,15 +6054,9 @@
     "DISTANCE": 60,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 750,
@@ -6625,15 +6127,9 @@
     "DISTANCE": 24,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 757,
@@ -6704,15 +6200,9 @@
     "DISTANCE": 6,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 758,
@@ -6783,15 +6273,9 @@
     "DISTANCE": 14,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 761,
@@ -6862,15 +6346,9 @@
     "DISTANCE": 16,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 764,
@@ -6941,15 +6419,9 @@
     "DISTANCE": 30,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 768,
@@ -7020,15 +6492,9 @@
     "DISTANCE": 16,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 780,
@@ -7099,15 +6565,9 @@
     "DISTANCE": 16,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 786,
@@ -7178,15 +6638,9 @@
     "DISTANCE": 34,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 801,
@@ -7257,15 +6711,9 @@
     "DISTANCE": 12,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 819,
@@ -7336,15 +6784,9 @@
     "DISTANCE": 16,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 828,
@@ -7415,15 +6857,9 @@
     "DISTANCE": 55,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 844,
@@ -7494,15 +6930,9 @@
     "DISTANCE": 16,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 845,
@@ -7573,15 +7003,9 @@
     "DISTANCE": 8,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 864,
@@ -7652,15 +7076,9 @@
     "DISTANCE": 22,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 866,
@@ -7731,15 +7149,9 @@
     "DISTANCE": 6,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 872,
@@ -7810,15 +7222,9 @@
     "DISTANCE": 30,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 876,
@@ -7889,15 +7295,9 @@
     "DISTANCE": 8,
     "F7SEX": 2,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 878,
@@ -7968,15 +7368,9 @@
     "DISTANCE": 34,
     "F7SEX": 1,
     "B4OCCUP": 4,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 921,
@@ -8047,15 +7441,9 @@
     "DISTANCE": 24,
     "F7SEX": 1,
     "B4OCCUP": 4,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 932,
@@ -8126,15 +7514,9 @@
     "DISTANCE": 40,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 935,
@@ -8205,15 +7587,9 @@
     "DISTANCE": 18,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 953,
@@ -8284,15 +7660,9 @@
     "DISTANCE": 60,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 960,
@@ -8363,15 +7733,9 @@
     "DISTANCE": 18,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 964,
@@ -8442,15 +7806,9 @@
     "DISTANCE": 32,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 965,
@@ -8521,15 +7879,9 @@
     "DISTANCE": 30,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 972,
@@ -8600,15 +7952,9 @@
     "DISTANCE": 14,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 975,
@@ -8679,15 +8025,9 @@
     "DISTANCE": 28,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 978,
@@ -8758,15 +8098,9 @@
     "DISTANCE": 6,
     "F7SEX": 1,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 980,
@@ -8837,15 +8171,9 @@
     "DISTANCE": 36,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 982,
@@ -8916,15 +8244,9 @@
     "DISTANCE": 30,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 984,
@@ -8995,15 +8317,9 @@
     "DISTANCE": 40,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 997,
@@ -9074,15 +8390,9 @@
     "DISTANCE": 24,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 1000,
@@ -9153,15 +8463,9 @@
     "DISTANCE": 26,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 1001,
@@ -9232,15 +8536,9 @@
     "DISTANCE": 40,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 1005,
@@ -9311,15 +8609,9 @@
     "DISTANCE": 14,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 1007,
@@ -9390,15 +8682,9 @@
     "DISTANCE": 30,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 1010,
@@ -9469,15 +8755,9 @@
     "DISTANCE": 24,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 1020,
@@ -9548,15 +8828,9 @@
     "DISTANCE": 25,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 1,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 1030,
@@ -9627,15 +8901,9 @@
     "DISTANCE": 19,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 1076,
@@ -9706,15 +8974,9 @@
     "DISTANCE": 28,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 1077,
@@ -9785,15 +9047,9 @@
     "DISTANCE": 20,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 1081,
@@ -9864,15 +9120,9 @@
     "DISTANCE": 30,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 1092,
@@ -9943,15 +9193,9 @@
     "DISTANCE": 10,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 1093,
@@ -10022,15 +9266,9 @@
     "DISTANCE": 14,
     "F7SEX": 1,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 1105,
@@ -10101,15 +9339,9 @@
     "DISTANCE": 16,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 1110,
@@ -10180,15 +9412,9 @@
     "DISTANCE": 36,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 1124,
@@ -10259,15 +9485,9 @@
     "DISTANCE": 26,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 1130,
@@ -10338,15 +9558,9 @@
     "DISTANCE": 50,
     "F7SEX": 1,
     "B4OCCUP": 1,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 1135,
@@ -10417,15 +9631,9 @@
     "DISTANCE": 16,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 1158,
@@ -10496,15 +9704,9 @@
     "DISTANCE": 12,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 1227,
@@ -10575,15 +9777,9 @@
     "DISTANCE": 16,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 1228,
@@ -10654,15 +9850,9 @@
     "DISTANCE": 24,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": null,
-    "DMINC3": null,
-    "DMINC4": null,
-    "DMINC5": null,
-    "DMINC6": null
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": null
   },
   {
     "ID": 1233,
@@ -10733,15 +9923,9 @@
     "DISTANCE": 12,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 1,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 1243,
@@ -10812,15 +9996,9 @@
     "DISTANCE": 22,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 1247,
@@ -10891,15 +10069,9 @@
     "DISTANCE": 10,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 1248,
@@ -10970,15 +10142,9 @@
     "DISTANCE": 22,
     "F7SEX": 2,
     "B4OCCUP": 7,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 1249,
@@ -11049,15 +10215,9 @@
     "DISTANCE": 30,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 1276,
@@ -11128,15 +10288,9 @@
     "DISTANCE": 20,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 1292,
@@ -11207,15 +10361,9 @@
     "DISTANCE": 30,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 1296,
@@ -11286,15 +10434,9 @@
     "DISTANCE": 22,
     "F7SEX": 1,
     "B4OCCUP": 1,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 1330,
@@ -11365,15 +10507,9 @@
     "DISTANCE": 10,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 1332,
@@ -11444,15 +10580,9 @@
     "DISTANCE": 16,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 1347,
@@ -11523,15 +10653,9 @@
     "DISTANCE": 24,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 1356,
@@ -11602,15 +10726,9 @@
     "DISTANCE": 14,
     "F7SEX": 2,
     "B4OCCUP": 7,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 1371,
@@ -11681,15 +10799,9 @@
     "DISTANCE": 12,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 1382,
@@ -11760,15 +10872,9 @@
     "DISTANCE": 20,
     "F7SEX": 2,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 1,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 1397,
@@ -11839,15 +10945,9 @@
     "DISTANCE": 7,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 1403,
@@ -11918,15 +11018,9 @@
     "DISTANCE": 16,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 1404,
@@ -11997,15 +11091,9 @@
     "DISTANCE": 12,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 1411,
@@ -12076,15 +11164,9 @@
     "DISTANCE": 10,
     "F7SEX": 1,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 1423,
@@ -12155,15 +11237,9 @@
     "DISTANCE": 26,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 1430,
@@ -12234,15 +11310,9 @@
     "DISTANCE": 10,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 1431,
@@ -12313,15 +11383,9 @@
     "DISTANCE": 24,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 1438,
@@ -12392,15 +11456,9 @@
     "DISTANCE": 24,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2000,
@@ -12471,15 +11529,9 @@
     "DISTANCE": 20,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 2001,
@@ -12550,15 +11602,9 @@
     "DISTANCE": 12,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 2002,
@@ -12629,15 +11675,9 @@
     "DISTANCE": 86,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": null,
-    "DMINC3": null,
-    "DMINC4": null,
-    "DMINC5": null,
-    "DMINC6": null
+    "TECHCONSB": null,
+    "AGE": 1,
+    "INCOM": null
   },
   {
     "ID": 2003,
@@ -12708,15 +11748,9 @@
     "DISTANCE": 6,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 2004,
@@ -12787,15 +11821,9 @@
     "DISTANCE": 36,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 2005,
@@ -12866,15 +11894,9 @@
     "DISTANCE": 32,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 2006,
@@ -12945,15 +11967,9 @@
     "DISTANCE": 84,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2007,
@@ -13024,15 +12040,9 @@
     "DISTANCE": 20,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 2008,
@@ -13103,15 +12113,9 @@
     "DISTANCE": 4,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 2009,
@@ -13182,15 +12186,9 @@
     "DISTANCE": 30,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 2010,
@@ -13261,15 +12259,9 @@
     "DISTANCE": 0,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 2011,
@@ -13340,15 +12332,9 @@
     "DISTANCE": 60,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2012,
@@ -13419,15 +12405,9 @@
     "DISTANCE": 40,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 2013,
@@ -13498,15 +12478,9 @@
     "DISTANCE": 24,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 2014,
@@ -13577,15 +12551,9 @@
     "DISTANCE": 42,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 2015,
@@ -13656,15 +12624,9 @@
     "DISTANCE": 30,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 2016,
@@ -13735,15 +12697,9 @@
     "DISTANCE": 20,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 2017,
@@ -13814,15 +12770,9 @@
     "DISTANCE": 24,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 2018,
@@ -13893,15 +12843,9 @@
     "DISTANCE": 72,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2019,
@@ -13972,15 +12916,9 @@
     "DISTANCE": 34,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2020,
@@ -14051,15 +12989,9 @@
     "DISTANCE": 32,
     "F7SEX": 1,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2021,
@@ -14130,15 +13062,9 @@
     "DISTANCE": 8,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 2022,
@@ -14209,15 +13135,9 @@
     "DISTANCE": 28,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2023,
@@ -14288,15 +13208,9 @@
     "DISTANCE": 24,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 2024,
@@ -14367,15 +13281,9 @@
     "DISTANCE": 34,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2025,
@@ -14446,15 +13354,9 @@
     "DISTANCE": 36,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 2026,
@@ -14525,15 +13427,9 @@
     "DISTANCE": 20,
     "F7SEX": 1,
     "B4OCCUP": 1,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 2027,
@@ -14604,15 +13500,9 @@
     "DISTANCE": 40,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2028,
@@ -14683,15 +13573,9 @@
     "DISTANCE": 64,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2029,
@@ -14762,15 +13646,9 @@
     "DISTANCE": 70,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 2030,
@@ -14841,15 +13719,9 @@
     "DISTANCE": 10,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 2031,
@@ -14920,15 +13792,9 @@
     "DISTANCE": 4,
     "F7SEX": 1,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 2032,
@@ -14999,15 +13865,9 @@
     "DISTANCE": 6,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2033,
@@ -15078,15 +13938,9 @@
     "DISTANCE": 3,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": null,
-    "DMAGE4": null,
-    "DMAGE5": null,
-    "DMAGE6": null,
-    "DMINC2": null,
-    "DMINC3": null,
-    "DMINC4": null,
-    "DMINC5": null,
-    "DMINC6": null
+    "TECHCONSB": 0,
+    "AGE": null,
+    "INCOM": null
   },
   {
     "ID": 2034,
@@ -15157,15 +14011,9 @@
     "DISTANCE": 50,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 2035,
@@ -15236,15 +14084,9 @@
     "DISTANCE": 50,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 2036,
@@ -15315,15 +14157,9 @@
     "DISTANCE": 20,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 1,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2037,
@@ -15394,15 +14230,9 @@
     "DISTANCE": 36,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2038,
@@ -15473,15 +14303,9 @@
     "DISTANCE": 50,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2039,
@@ -15552,15 +14376,9 @@
     "DISTANCE": 30,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 2040,
@@ -15631,15 +14449,9 @@
     "DISTANCE": 22,
     "F7SEX": 1,
     "B4OCCUP": 4,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 2041,
@@ -15710,15 +14522,9 @@
     "DISTANCE": 21,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 2042,
@@ -15789,15 +14595,9 @@
     "DISTANCE": 22,
     "F7SEX": 1,
     "B4OCCUP": 4,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 2043,
@@ -15868,15 +14668,9 @@
     "DISTANCE": 10,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2044,
@@ -15947,15 +14741,9 @@
     "DISTANCE": 18,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 2045,
@@ -16026,15 +14814,9 @@
     "DISTANCE": 40,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2046,
@@ -16105,15 +14887,9 @@
     "DISTANCE": 14,
     "F7SEX": 1,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2047,
@@ -16184,15 +14960,9 @@
     "DISTANCE": 14,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2048,
@@ -16263,15 +15033,9 @@
     "DISTANCE": 30,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2049,
@@ -16342,15 +15106,9 @@
     "DISTANCE": 16,
     "F7SEX": 1,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2050,
@@ -16421,15 +15179,9 @@
     "DISTANCE": 34,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 2051,
@@ -16500,15 +15252,9 @@
     "DISTANCE": 34,
     "F7SEX": 1,
     "B4OCCUP": 1,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 2052,
@@ -16579,15 +15325,9 @@
     "DISTANCE": 110,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 2053,
@@ -16658,15 +15398,9 @@
     "DISTANCE": 70,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2054,
@@ -16737,15 +15471,9 @@
     "DISTANCE": 26,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 2055,
@@ -16816,15 +15544,9 @@
     "DISTANCE": 20,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2056,
@@ -16895,15 +15617,9 @@
     "DISTANCE": 4,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 2057,
@@ -16974,15 +15690,9 @@
     "DISTANCE": 90,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2058,
@@ -17053,15 +15763,9 @@
     "DISTANCE": 4,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 2059,
@@ -17132,15 +15836,9 @@
     "DISTANCE": 26,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 2060,
@@ -17211,15 +15909,9 @@
     "DISTANCE": 30,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 2061,
@@ -17290,15 +15982,9 @@
     "DISTANCE": 60,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 2062,
@@ -17369,15 +16055,9 @@
     "DISTANCE": 36,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 2063,
@@ -17448,15 +16128,9 @@
     "DISTANCE": 100,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": null,
-    "DMINC3": null,
-    "DMINC4": null,
-    "DMINC5": null,
-    "DMINC6": null
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": null
   },
   {
     "ID": 2064,
@@ -17527,15 +16201,9 @@
     "DISTANCE": 66,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 2065,
@@ -17606,15 +16274,9 @@
     "DISTANCE": 1,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 2066,
@@ -17685,15 +16347,9 @@
     "DISTANCE": 16,
     "F7SEX": 1,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2067,
@@ -17764,15 +16420,9 @@
     "DISTANCE": 6,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2068,
@@ -17843,15 +16493,9 @@
     "DISTANCE": 8,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 2069,
@@ -17922,15 +16566,9 @@
     "DISTANCE": 20,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 2070,
@@ -18001,15 +16639,9 @@
     "DISTANCE": 2,
     "F7SEX": 2,
     "B4OCCUP": 4,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 2071,
@@ -18080,15 +16712,9 @@
     "DISTANCE": 100,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 2072,
@@ -18159,15 +16785,9 @@
     "DISTANCE": 34,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 2073,
@@ -18238,15 +16858,9 @@
     "DISTANCE": 16,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 1,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2074,
@@ -18317,15 +16931,9 @@
     "DISTANCE": 26,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2075,
@@ -18396,15 +17004,9 @@
     "DISTANCE": 38,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2076,
@@ -18475,15 +17077,9 @@
     "DISTANCE": 30,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2077,
@@ -18554,15 +17150,9 @@
     "DISTANCE": 18,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 2078,
@@ -18633,15 +17223,9 @@
     "DISTANCE": 20,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 2079,
@@ -18712,15 +17296,9 @@
     "DISTANCE": 106,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 2080,
@@ -18791,15 +17369,9 @@
     "DISTANCE": 18,
     "F7SEX": 1,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 2081,
@@ -18870,15 +17442,9 @@
     "DISTANCE": 12,
     "F7SEX": 1,
     "B4OCCUP": 3,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 2082,
@@ -18949,15 +17515,9 @@
     "DISTANCE": 34,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 2083,
@@ -19028,15 +17588,9 @@
     "DISTANCE": 10,
     "F7SEX": 1,
     "B4OCCUP": 1,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 2084,
@@ -19107,15 +17661,9 @@
     "DISTANCE": 38,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 2085,
@@ -19186,15 +17734,9 @@
     "DISTANCE": 36,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 2086,
@@ -19265,15 +17807,9 @@
     "DISTANCE": 26,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 2087,
@@ -19344,15 +17880,9 @@
     "DISTANCE": 2,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 2088,
@@ -19423,15 +17953,9 @@
     "DISTANCE": 14,
     "F7SEX": 1,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3000,
@@ -19502,15 +18026,9 @@
     "DISTANCE": 80,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 3001,
@@ -19581,15 +18099,9 @@
     "DISTANCE": 70,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3002,
@@ -19660,15 +18172,9 @@
     "DISTANCE": 20,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3003,
@@ -19739,15 +18245,9 @@
     "DISTANCE": 24,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 3004,
@@ -19818,15 +18318,9 @@
     "DISTANCE": 36,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3005,
@@ -19897,15 +18391,9 @@
     "DISTANCE": 10,
     "F7SEX": 1,
     "B4OCCUP": 4,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 3006,
@@ -19976,15 +18464,9 @@
     "DISTANCE": 90,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 3007,
@@ -20055,15 +18537,9 @@
     "DISTANCE": 48,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3008,
@@ -20134,15 +18610,9 @@
     "DISTANCE": 70,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3009,
@@ -20213,15 +18683,9 @@
     "DISTANCE": 10,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 1,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3010,
@@ -20292,15 +18756,9 @@
     "DISTANCE": 24,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3011,
@@ -20371,15 +18829,9 @@
     "DISTANCE": 30,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3012,
@@ -20450,15 +18902,9 @@
     "DISTANCE": 60,
     "F7SEX": 1,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3013,
@@ -20529,15 +18975,9 @@
     "DISTANCE": 60,
     "F7SEX": 2,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 3014,
@@ -20608,15 +19048,9 @@
     "DISTANCE": 30,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3015,
@@ -20687,15 +19121,9 @@
     "DISTANCE": 80,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3016,
@@ -20766,15 +19194,9 @@
     "DISTANCE": 10,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3017,
@@ -20845,15 +19267,9 @@
     "DISTANCE": 28,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3018,
@@ -20924,15 +19340,9 @@
     "DISTANCE": 62,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 3019,
@@ -21003,15 +19413,9 @@
     "DISTANCE": 60,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3020,
@@ -21082,15 +19486,9 @@
     "DISTANCE": 70,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3021,
@@ -21161,15 +19559,9 @@
     "DISTANCE": 50,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3022,
@@ -21240,15 +19632,9 @@
     "DISTANCE": 64,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3023,
@@ -21319,15 +19705,9 @@
     "DISTANCE": 60,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 3024,
@@ -21398,15 +19778,9 @@
     "DISTANCE": 50,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 3025,
@@ -21477,15 +19851,9 @@
     "DISTANCE": 2,
     "F7SEX": 1,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3026,
@@ -21556,15 +19924,9 @@
     "DISTANCE": 12,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3027,
@@ -21635,15 +19997,9 @@
     "DISTANCE": 90,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 3028,
@@ -21714,15 +20070,9 @@
     "DISTANCE": 80,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3029,
@@ -21793,15 +20143,9 @@
     "DISTANCE": 30,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3030,
@@ -21872,15 +20216,9 @@
     "DISTANCE": 124,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3031,
@@ -21951,15 +20289,9 @@
     "DISTANCE": 42,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 1,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 3032,
@@ -22030,15 +20362,9 @@
     "DISTANCE": 46,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3033,
@@ -22109,15 +20435,9 @@
     "DISTANCE": 20,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 3034,
@@ -22188,15 +20508,9 @@
     "DISTANCE": 32,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3035,
@@ -22267,15 +20581,9 @@
     "DISTANCE": 40,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 3036,
@@ -22346,15 +20654,9 @@
     "DISTANCE": 80,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 3037,
@@ -22425,15 +20727,9 @@
     "DISTANCE": 70,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3038,
@@ -22504,15 +20800,9 @@
     "DISTANCE": 86,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 1,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3039,
@@ -22583,15 +20873,9 @@
     "DISTANCE": 66,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3040,
@@ -22662,15 +20946,9 @@
     "DISTANCE": 38,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3041,
@@ -22741,15 +21019,9 @@
     "DISTANCE": 70,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 3042,
@@ -22820,15 +21092,9 @@
     "DISTANCE": 80,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3043,
@@ -22899,15 +21165,9 @@
     "DISTANCE": 60,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3044,
@@ -22978,15 +21238,9 @@
     "DISTANCE": 5,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 3045,
@@ -23057,15 +21311,9 @@
     "DISTANCE": 6,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 1,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3046,
@@ -23136,15 +21384,9 @@
     "DISTANCE": 80,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3047,
@@ -23215,15 +21457,9 @@
     "DISTANCE": 8,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 1,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3048,
@@ -23294,15 +21530,9 @@
     "DISTANCE": 30,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 3049,
@@ -23373,15 +21603,9 @@
     "DISTANCE": 38,
     "F7SEX": 1,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3050,
@@ -23452,15 +21676,9 @@
     "DISTANCE": 0,
     "F7SEX": null,
     "B4OCCUP": 1,
-    "DMAGE3": null,
-    "DMAGE4": null,
-    "DMAGE5": null,
-    "DMAGE6": null,
-    "DMINC2": null,
-    "DMINC3": null,
-    "DMINC4": null,
-    "DMINC5": null,
-    "DMINC6": null
+    "TECHCONSB": 0,
+    "AGE": null,
+    "INCOM": null
   },
   {
     "ID": 3051,
@@ -23531,15 +21749,9 @@
     "DISTANCE": 70,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3052,
@@ -23610,15 +21822,9 @@
     "DISTANCE": 70,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3053,
@@ -23689,15 +21895,9 @@
     "DISTANCE": 6,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 3054,
@@ -23768,15 +21968,9 @@
     "DISTANCE": 50,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3055,
@@ -23847,15 +22041,9 @@
     "DISTANCE": 60,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3056,
@@ -23926,15 +22114,9 @@
     "DISTANCE": 10,
     "F7SEX": 1,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 3057,
@@ -24005,15 +22187,9 @@
     "DISTANCE": 10,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 3058,
@@ -24084,15 +22260,9 @@
     "DISTANCE": 20,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3059,
@@ -24163,15 +22333,9 @@
     "DISTANCE": 4,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 3060,
@@ -24242,15 +22406,9 @@
     "DISTANCE": 26,
     "F7SEX": 2,
     "B4OCCUP": 4,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 3061,
@@ -24321,15 +22479,9 @@
     "DISTANCE": 26,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3062,
@@ -24400,15 +22552,9 @@
     "DISTANCE": 40,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 3063,
@@ -24479,15 +22625,9 @@
     "DISTANCE": 44,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 1,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3064,
@@ -24558,15 +22698,9 @@
     "DISTANCE": 198,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 1,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3065,
@@ -24637,15 +22771,9 @@
     "DISTANCE": 90,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 3066,
@@ -24716,15 +22844,9 @@
     "DISTANCE": 26,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 3067,
@@ -24795,15 +22917,9 @@
     "DISTANCE": 80,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3068,
@@ -24874,15 +22990,9 @@
     "DISTANCE": 30,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 1,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3069,
@@ -24953,15 +23063,9 @@
     "DISTANCE": 54,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3070,
@@ -25032,15 +23136,9 @@
     "DISTANCE": 26,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 3071,
@@ -25111,15 +23209,9 @@
     "DISTANCE": 24,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 3072,
@@ -25190,15 +23282,9 @@
     "DISTANCE": 8,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3073,
@@ -25269,15 +23355,9 @@
     "DISTANCE": 30,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3074,
@@ -25348,15 +23428,9 @@
     "DISTANCE": 22,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 3075,
@@ -25427,15 +23501,9 @@
     "DISTANCE": 34,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3076,
@@ -25506,15 +23574,9 @@
     "DISTANCE": 50,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 3077,
@@ -25585,15 +23647,9 @@
     "DISTANCE": 24,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 3078,
@@ -25664,15 +23720,9 @@
     "DISTANCE": 80,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3079,
@@ -25743,15 +23793,9 @@
     "DISTANCE": 50,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3080,
@@ -25822,15 +23866,9 @@
     "DISTANCE": 40,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 1,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 3081,
@@ -25901,15 +23939,9 @@
     "DISTANCE": 26,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3082,
@@ -25980,15 +24012,9 @@
     "DISTANCE": 8,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 1
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 3083,
@@ -26059,15 +24085,9 @@
     "DISTANCE": 28,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 3084,
@@ -26138,15 +24158,9 @@
     "DISTANCE": 36,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 3085,
@@ -26217,15 +24231,9 @@
     "DISTANCE": 20,
     "F7SEX": 2,
     "B4OCCUP": 5,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 3086,
@@ -26296,15 +24304,9 @@
     "DISTANCE": 25,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 1,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 0,
+    "INCOM": 1
   },
   {
     "ID": 3087,
@@ -26375,15 +24377,9 @@
     "DISTANCE": 30,
     "F7SEX": 2,
     "B4OCCUP": 1,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 1,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 1,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 1
   },
   {
     "ID": 3088,
@@ -26454,15 +24450,9 @@
     "DISTANCE": 50,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 0,
-    "DMINC3": 1,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 0,
+    "AGE": 1,
+    "INCOM": 0
   },
   {
     "ID": 3089,
@@ -26533,15 +24523,9 @@
     "DISTANCE": 30,
     "F7SEX": 2,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 0,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 0,
+    "INCOM": 0
   },
   {
     "ID": 3090,
@@ -26612,14 +24596,8 @@
     "DISTANCE": 0,
     "F7SEX": 1,
     "B4OCCUP": 2,
-    "DMAGE3": 0,
-    "DMAGE4": 1,
-    "DMAGE5": 0,
-    "DMAGE6": 0,
-    "DMINC2": 1,
-    "DMINC3": 0,
-    "DMINC4": 0,
-    "DMINC5": 0,
-    "DMINC6": 0
+    "TECHCONSB": 1,
+    "AGE": 1,
+    "INCOM": 0
   }
 ]

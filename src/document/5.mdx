@@ -1,0 +1,83 @@
+import Regression from '../components/Regression';
+import data from '../data/data.json';
+import getValidResponses from '../utils/getValidResponses';
+import { jStat } from 'jstat';
+
+### First Models
+
+After the removal and re-classification of variables, we have evaluated the first models and obtained the following results.
+
+<Regression
+  type={'logit'}
+  data={getValidResponses([
+    'CHILDLT6',
+    'EFACT1',
+    'EFACT7',
+    'COMMTIME',
+    'EFACT9',
+    'UNAWARE',
+    'JOBHOME',
+    'MANCONST',
+    'JOBCONST',
+    'TECHCONSB',
+    'CSO9FT2',
+    'AGE',
+    'INCOM'
+  ])
+    .map(item => data[item])
+    .filter(item => item['FEMALE'] === 0)}
+  input={[
+    { name: 'CHILDLT6', location: 0, type: 'ASV' },
+    { name: 'EFACT1', location: 0, type: 'ASV' },
+    { name: 'EFACT7', location: 0, type: 'ASV' },
+    { name: 'COMMTIME', location: 0, type: 'ASV' },
+    { name: 'EFACT9', location: 0, type: 'ASV' },
+    { name: 'UNAWARE', location: 0, type: 'ASV' },
+    { name: 'JOBHOME', location: 0, type: 'ASV' },
+    { name: 'MANCONST', location: 0, type: 'ASV' },
+    { name: 'JOBCONST', location: 0, type: 'ASV' },
+    { name: 'TECHCONSB', location: 0, type: 'ASV' },
+    { name: 'CSO9FT2', location: 0, type: 'ASV' },
+    { name: 'AGE', location: 0, type: 'ASV' },
+    { name: 'INCOM', location: 0, type: 'ASV' }
+  ]}
+  table={{ title: 'Table 6. First Male Model' }}
+  outPlot={{ title: 'Figure 4. Estimate by First Male Model' }}
+/>
+<Regression
+  type={'logit'}
+  data={getValidResponses([
+    'CHILDLT6',
+    'EFACT1',
+    'EFACT7',
+    'COMMTIME',
+    'EFACT9',
+    'UNAWARE',
+    'JOBHOME',
+    'MANCONST',
+    'JOBCONST',
+    'TECHCONSB',
+    'CSO9FT2',
+    'AGE',
+    'INCOM'
+  ])
+    .map(item => data[item])
+    .filter(item => item['FEMALE'] === 1)}
+  input={[
+    { name: 'CHILDLT6', location: 0, type: 'ASV' },
+    { name: 'EFACT1', location: 0, type: 'ASV' },
+    { name: 'EFACT7', location: 0, type: 'ASV' },
+    { name: 'COMMTIME', location: 0, type: 'ASV' },
+    { name: 'EFACT9', location: 0, type: 'ASV' },
+    { name: 'UNAWARE', location: 0, type: 'ASV' },
+    { name: 'JOBHOME', location: 0, type: 'ASV' },
+    { name: 'MANCONST', location: 0, type: 'ASV' },
+    { name: 'JOBCONST', location: 0, type: 'ASV' },
+    { name: 'TECHCONSB', location: 0, type: 'ASV' },
+    { name: 'CSO9FT2', location: 0, type: 'ASV' },
+    { name: 'AGE', location: 0, type: 'ASV' },
+    { name: 'INCOM', location: 0, type: 'ASV' }
+  ]}
+  table={{ title: 'Table 7. First Female Model' }}
+  outPlot={{ title: 'Figure 8. Estimate by First Female Model' }}
+/>
