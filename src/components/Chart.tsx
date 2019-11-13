@@ -16,11 +16,11 @@ type Props = {
   title: string;
   output: string[];
   truth: string[];
-  x?: SeriesData;
-  y?: SeriesData;
+  x?: DataSeries;
+  y?: DataSeries;
 };
 
-type SeriesData = {
+export type DataSeries = {
   label: string;
   values: number[];
 };
@@ -60,7 +60,10 @@ const Chart: React.FC<Props> = (props: Props) => {
   });
 
   return (
-    <Box style={{ boxSizing: 'border-box', border: '1px gray solid' }}>
+    <Box
+      margin={'0.6rem 0 0.6rem 0'}
+      style={{ boxSizing: 'border-box', border: '1px gray solid' }}
+    >
       <XYPlot
         colorType="literal"
         width={720}

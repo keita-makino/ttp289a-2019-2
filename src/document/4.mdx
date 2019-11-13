@@ -3,6 +3,7 @@ import data from '../data/data.json';
 import getValidResponses from '../utils/getValidResponses';
 import { jStat } from 'jstat';
 import { indices } from './3.mdx';
+import Bar from '../components/Bar';
 
 ## 7.
 
@@ -67,10 +68,20 @@ The second one examines the difference in importance between the two models. Her
 
 ---
 
-First of all, we have initialized the first MA and FE models, namely FMA and FFE model with all the 12 variables referred above and bias term. Before feeding the variable into the computation, though, we will review the distribution of the variable. The following figures illustrates the distribution of each variable with two groups of gender.
+First of all, we have initialized the first MA and FE models, namely FMA and FFE model with all the 12 variables referred above and bias term. Before feeding the variable into the computation, though, we will review the distribution of the variables. The following figures illustrates the distribution of each variable with two groups of gender.
 
-
-
+<Bar label={'OVERTIME'} title={"Figure 4.1. Distribution of"} />
+<Bar label={'EFACT9'}  title={"Figure 4.2. Distribution of"} />
+<Bar label={'EFACT6' } title={"Figure 4.3. Distribution of"} />
+<Bar label={'MANCONST'} title={"Figure 4.4. Distribution of"} />
+<Bar label={'JOBCONST' } title={"Figure 4.5. Distribution of"} />
+<Bar label={'TECHCONS' } title={"Figure 4.6. Distribution of"} />
+<Bar label={'CSO9FT2'} title={"Figure 4.7. Distribution of"} />
+<Bar label={'MANDPRV'} title={"Figure 4.8. Distribution of"} />
+<Bar label={'UNAWARE'} title={"Figure 4.9. Distribution of"} />
+<Bar label={'CHILDLT6'} title={"Figure 4.10. Distribution of"} />
+<Bar label={'F8AGEGR'} title={"Figure 4.11. Distribution of"} />
+<Bar label={'F16INCOM'} title={"Figure 4.12. Distribution of"} />
 
 The result of logistic regression is:
 

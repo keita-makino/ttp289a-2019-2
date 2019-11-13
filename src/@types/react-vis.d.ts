@@ -24,6 +24,9 @@ declare module 'react-vis' {
   export type ChartLabelProps = any;
   export class ChartLabel<T = any> extends Component<ChartLabelProps & T> {}
 
+  export type BarSeriesProps = any;
+  export class BarSeries<T = any> extends Component<BarSeriesProps & T> {}
+
   import {
     Component,
     PureComponent,

@@ -55,7 +55,7 @@ $$
 The likelihood-ratio ($LR$) is
 
 $$
-LR = -2(\mathcal{MS} - \mathcal{BS})
+LR = -2(\mathcal{L}_{MS} - \mathcal{L}_{BS})
 $$
 
 Under hypothesis $H_0$, this statistic has a chi-squared distribution with $K - 1$ (= number of variables in BS Model - 1) degree of freedom.
@@ -90,7 +90,21 @@ $$
 indicates that the new BS model is significantly better than the MS model.
 
 The bias (constant) term has been drastically increased from the MS model. This is because, in the BS model, an observation whose all the $X$ values are zero already has a certain information.  
-Looking at the S.D. and mean of the variables, for example, number of overtimes hours have its mean at 3.907. This means that a survey participant who has the variable at zero hours causes some marginal effect. The same principle applies to other variables, leading that a zero vector of variables does no longer mean "neutral" but somehow "characteristic" property of an observation.
+Looking at the S.D. and mean of the variables, for example, number of overtimes hours have its mean at 3.907. This means that a survey participant who with the variable of zero hours has much smaller value of utility function than the others. The same principle applies to other variables, leading that a person with zero vector of variables does no longer mean "neutral" but somehow "characteristic" property of an observation.
+
+In detail, let $S_{n}$ be the deterministic part of the utility function for individual $n$, but without the bias term. By summing up the mean of variables times their coefficient,
+
+$$
+\begin{aligned}
+  S_{average} &= \sum_{i=1}^7\beta_i X_i
+  &= (3.907 \times 0.016 + 0.013 \times 0.730 + ...)
+  &= -1.434
+\end{aligned}
+$$
+
+we can infer that an "average" participant will have a negative value of $S$. Meanwhile, we want the model to output the positive (telecommuting) response at around 45% of the sample. So, a person with average attributes should have a deterministic part of the utility function around -0.269, which has been evaluated through the MS model.
+
+This is the reason why the bias term becomes positive in this BS model. Note that, here we have referred to "average" observation with arithmetic mean for easier representation, but in general it does not necessarily match the representative value of $S$ among the sample. (i.e., $-1.434 + 0.800 \neq -0.269$)
 
 ## 6.
 
