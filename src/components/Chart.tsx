@@ -16,8 +16,13 @@ type Props = {
   title: string;
   output: string[];
   truth: string[];
-  x?: number[];
-  y?: number[];
+  x?: SeriesData;
+  y?: SeriesData;
+};
+
+type SeriesData = {
+  label: string;
+  values: number[];
 };
 
 const Chart: React.FC<Props> = (props: Props) => {
@@ -38,67 +43,74 @@ const Chart: React.FC<Props> = (props: Props) => {
     .filter(item => item.value === 'false')
     .filter(item => props.truth[item.index] === 'true');
 
-  const dataArray = [dataTT, dataTF, dataFF, dataFT].map(array =>
-    array.map(item => ({ x: item.index, y: item.value }))
-  );
+  const dataArray = [dataTT, dataTF, dataFF, dataFT].map(array => {
+    if (props.x === undefined && props.y === undefined) {
+      return array.map(item => ({ x: item.index, y: item.value }));
+    } else if (props.y === undefined) {
+      return array.map((item, index) => ({
+        x: props.x!.values[index],
+        y: item.value
+      }));
+    } else {
+      return array.map((item, index) => ({
+        x: props.x!.values[index],
+        y: props.y!.values[index]
+      }));
+    }
+  });
 
   return (
     <Box style={{ boxSizing: 'border-box', border: '1px gray solid' }}>
-      {(() => {
-        if (props.x === undefined && props.y === undefined) {
-          return (
-            <XYPlot
-              colorType="literal"
-              width={720}
-              height={480}
-              yType="ordinal"
-              margin={{ left: 85, bottom: 60, right: 25 }}
-            >
-              <VerticalGridLines />
-              <HorizontalGridLines />
-              <XAxis />
-              <ChartLabel
-                text={'Index of respondent'}
-                xPercent={0.5}
-                yPercent={0.8}
-                style={{
-                  textAnchor: 'middle'
-                }}
-              />
-              <YAxis />
-              <ChartLabel
-                text={'Telecommuting (Predicted)'}
-                xPercent={0.03}
-                yPercent={0.32}
-                style={{
-                  transform: 'rotate(-90)',
-                  textAnchor: 'middle'
-                }}
-              />
-              <MarkSeries
-                animation={'stiff'}
-                color={'#FF7777'}
-                data={dataArray[3] as MarkSeriesPoint[]}
-              ></MarkSeries>
-              <MarkSeries
-                animation={'stiff'}
-                color={'#993333'}
-                data={dataArray[2] as MarkSeriesPoint[]}
-              ></MarkSeries>
-              <MarkSeries
-                animation={'stiff'}
-                color={'#7777FF'}
-                data={dataArray[1] as MarkSeriesPoint[]}
-              ></MarkSeries>
-              <MarkSeries
-                animation={'stiff'}
-                color={'#333399'}
-                data={dataArray[0] as MarkSeriesPoint[]}
-              ></MarkSeries>
-            </XYPlot>
-          );
-        }
-      })()}
+      <XYPlot
+        colorType="literal"
+        width={720}
+        height={480}
+        yType={props.y === undefined ? 'ordinal' : props.y.label}
+        margin={{ left: 85, bottom: 60, right: 25 }}
+      >
+        <VerticalGridLines />
+        <HorizontalGridLines />
+        <XAxis />
+        <YAxis />
+        <ChartLabel
+          text={props.x ? props.x.label : 'Index of respondent'}
+          xPercent={0.5}
+          yPercent={0.8}
+          style={{
+            textAnchor: 'center'
+          }}
+        />
+        <ChartLabel
+          text={props.y ? props.y.label : 'Telecommuting (Predicted)'}
+          xPercent={0.03}
+          yPercent={0.5}
+          style={{
+            transform: 'rotate(-90)',
+            textAnchor: 'center'
+          }}
+        />
+        <MarkSeries
+          animation={'stiff'}
+          color={'#FF7777'}
+          data={dataArray[3] as MarkSeriesPoint[]}
+        ></MarkSeries>
+        <MarkSeries
+          animation={'stiff'}
+          color={'#993333'}
+          data={dataArray[2] as MarkSeriesPoint[]}
+        ></MarkSeries>
+        <MarkSeries
+          animation={'stiff'}
+          color={'#7777FF'}
+          data={dataArray[1] as MarkSeriesPoint[]}
+        ></MarkSeries>
+        <MarkSeries
+          animation={'stiff'}
+          color={'#333399'}
+          data={dataArray[0] as MarkSeriesPoint[]}
+        ></MarkSeries>
+      </XYPlot>
+
       <Box margin={'0.25rem'}>
         <b>
           {props.title} (Pred. true=
