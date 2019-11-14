@@ -10,7 +10,6 @@ module.exports = (config, env) => {
     if (typeof rule.test !== 'undefined' || typeof rule.oneOf === 'undefined') {
       return rule;
     }
-
     rule.oneOf.unshift({
       test: /\.mdx?$/,
       use: [

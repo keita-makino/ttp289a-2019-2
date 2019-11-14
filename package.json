@@ -2,6 +2,7 @@
   "name": "ttp289a-2019-1",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://keita-makino.github.io/ttp289a-2019-1",
   "dependencies": {
     "@material-ui/core": "^4.6.0",
     "@types/jest": "24.0.21",
@@ -17,7 +18,9 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -44,6 +47,7 @@
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-prettier": "^3.1.1",
+    "gh-pages": "^2.1.1",
     "husky": "^3.0.9",
     "jstat": "^1.9.2",
     "katex": "^0.11.1",
