@@ -83,7 +83,7 @@ const Regression: React.FC<Props> = (props: Props) => {
               </TableHead>
               <TableBody>
                 <TableRow>
-                  <TableCell>bias</TableCell>
+                  <TableCell>(bias)</TableCell>
                   <TableCell>-</TableCell>
                   <TableCell>-</TableCell>
                   <TableCell>{lastState.bias}</TableCell>

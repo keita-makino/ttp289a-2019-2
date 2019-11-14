@@ -3,81 +3,109 @@ import data from '../data/data.json';
 import getValidResponses from '../utils/getValidResponses';
 import { jStat } from 'jstat';
 
+export const variable1 = [
+  'CHILDLT6',
+  'EFACT1',
+  'EFACT7',
+  'COMMTIME',
+  'EFACT9',
+  'JOBHOME',
+  'MANCONST',
+  'JOBCONST',
+  'TECHCONSB',
+  'CSO9FT2',
+  'AGE',
+  'INCOM'
+];
+
 ### First Models
 
 After the removal and re-classification of variables, we have evaluated the first models and obtained the following results.
 
 <Regression
   type={'logit'}
-  data={getValidResponses([
-    'CHILDLT6',
-    'EFACT1',
-    'EFACT7',
-    'COMMTIME',
-    'EFACT9',
-    'UNAWARE',
-    'JOBHOME',
-    'MANCONST',
-    'JOBCONST',
-    'TECHCONSB',
-    'CSO9FT2',
-    'AGE',
-    'INCOM'
-  ])
+  data={getValidResponses(variable1)
     .map(item => data[item])
     .filter(item => item['FEMALE'] === 0)}
-  input={[
-    { name: 'CHILDLT6', location: 0, type: 'ASV' },
-    { name: 'EFACT1', location: 0, type: 'ASV' },
-    { name: 'EFACT7', location: 0, type: 'ASV' },
-    { name: 'COMMTIME', location: 0, type: 'ASV' },
-    { name: 'EFACT9', location: 0, type: 'ASV' },
-    { name: 'UNAWARE', location: 0, type: 'ASV' },
-    { name: 'JOBHOME', location: 0, type: 'ASV' },
-    { name: 'MANCONST', location: 0, type: 'ASV' },
-    { name: 'JOBCONST', location: 0, type: 'ASV' },
-    { name: 'TECHCONSB', location: 0, type: 'ASV' },
-    { name: 'CSO9FT2', location: 0, type: 'ASV' },
-    { name: 'AGE', location: 0, type: 'ASV' },
-    { name: 'INCOM', location: 0, type: 'ASV' }
-  ]}
+  input={variable1.map(item => ({name: item, location:0, type: "ASV"}))}
   table={{ title: 'Table 6. First Male Model' }}
   outPlot={{ title: 'Figure 4. Estimate by First Male Model' }}
 />
 <Regression
   type={'logit'}
-  data={getValidResponses([
-    'CHILDLT6',
-    'EFACT1',
-    'EFACT7',
-    'COMMTIME',
-    'EFACT9',
-    'UNAWARE',
-    'JOBHOME',
-    'MANCONST',
-    'JOBCONST',
-    'TECHCONSB',
-    'CSO9FT2',
-    'AGE',
-    'INCOM'
-  ])
+  data={getValidResponses(variable1)
     .map(item => data[item])
     .filter(item => item['FEMALE'] === 1)}
-  input={[
-    { name: 'CHILDLT6', location: 0, type: 'ASV' },
-    { name: 'EFACT1', location: 0, type: 'ASV' },
-    { name: 'EFACT7', location: 0, type: 'ASV' },
-    { name: 'COMMTIME', location: 0, type: 'ASV' },
-    { name: 'EFACT9', location: 0, type: 'ASV' },
-    { name: 'UNAWARE', location: 0, type: 'ASV' },
-    { name: 'JOBHOME', location: 0, type: 'ASV' },
-    { name: 'MANCONST', location: 0, type: 'ASV' },
-    { name: 'JOBCONST', location: 0, type: 'ASV' },
-    { name: 'TECHCONSB', location: 0, type: 'ASV' },
-    { name: 'CSO9FT2', location: 0, type: 'ASV' },
-    { name: 'AGE', location: 0, type: 'ASV' },
-    { name: 'INCOM', location: 0, type: 'ASV' }
-  ]}
+  input={variable1.map(item => ({name: item, location:0, type: "ASV"}))}
   table={{ title: 'Table 7. First Female Model' }}
-  outPlot={{ title: 'Figure 8. Estimate by First Female Model' }}
+  outPlot={{ title: 'Figure 4. Estimate by First Female Model' }}
+/>
+
+The result of the first two models somehow show a different implication. For example, the effect of having small children and commute stress are significant in the FFE model, whereas it does not really affect the telecommuting status of male workers. On the other hand, the office discipline exhibits a significance only in the FMA model.
+
+Before proceeding the detailed analysis between the models, we can omit some variables to improve the performance of this model. Looking at the tables, family / community directed, internal control, technology constraint and income have a significance in neither of the model.
+
+Among them, income could be omitted first as it has the smallest magnitude of t-statistic. On the other hand, variable of technology constraint has relatively higher statistic in both of the model so that we would keep this in the next models. The rest of two variables
+
+export const variable2 = [
+  'CHILDLT6',
+  'EFACT7',
+  'COMMTIME',
+  'EFACT9',
+  'JOBHOME',
+  'MANCONST',
+  'JOBCONST',
+  'TECHCONSB',
+  'CSO9FT2',
+  'AGE'
+];
+
+<Regression
+  type={'logit'}
+  data={getValidResponses(variable2)
+    .map(item => data[item])
+    .filter(item => item['FEMALE'] === 0)}
+  input={variable2.map(item => ({name: item, location:0, type: "ASV"}))}
+  table={{ title: 'Table 8. First Male Model' }}
+  outPlot={{ title: 'Figure 5. Estimate by First Male Model' }}
+/>
+<Regression
+  type={'logit'}
+  data={getValidResponses(variable2)
+    .map(item => data[item])
+    .filter(item => item['FEMALE'] === 1)}
+  input={variable2.map(item => ({name: item, location:0, type: "ASV"}))}
+  table={{ title: 'Table 9. First Female Model' }}
+  outPlot={{ title: 'Figure 6. Estimate by First Female Model' }}
+/>
+
+export const variable3 = [
+  'CHILDLT6',
+  'COMMTIME',
+  'EFACT9',
+  'JOBHOME',
+  'MANCONST',
+  'JOBCONST',
+  'TECHCONSB',
+  'CSO9FT2',
+  'AGE'
+];
+
+<Regression
+  type={'logit'}
+  data={getValidResponses(variable3)
+    .map(item => data[item])
+    .filter(item => item['FEMALE'] === 0)}
+  input={variable3.map(item => ({name: item, location:0, type: "ASV"}))}
+  table={{ title: 'Table 8. First Male Model' }}
+  outPlot={{ title: 'Figure 5. Estimate by First Male Model' }}
+/>
+<Regression
+  type={'logit'}
+  data={getValidResponses(variable3)
+    .map(item => data[item])
+    .filter(item => item['FEMALE'] === 1)}
+  input={variable3.map(item => ({name: item, location:0, type: "ASV"}))}
+  table={{ title: 'Table 9. First Female Model' }}
+  outPlot={{ title: 'Figure 6. Estimate by First Female Model' }}
 />
