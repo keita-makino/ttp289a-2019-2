@@ -1,14 +1,11 @@
-# TTP289a-2019-1
+# ttp289a-2019-1
 
 As a homework of TTP289A 2019 Fall: Discrete Choice Modeling.
 
 # Interactive Plots
 
-Interactive plots will be available in the web version.
-
-1. clone / download this repository.
-2. `npm ci`
-3. `npm start`
+Interactive plots will be available in the web version.  
+https://keita-makino.github.io/ttp289a-2019-1/
 
 # References
 
