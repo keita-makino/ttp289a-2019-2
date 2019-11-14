@@ -101,12 +101,11 @@ const useRegression = (
   };
 
   const optimizer = tf.train.sgd(
-    0.01 /
-      Math.log(Math.max(2, input.length + 1)) /
+    (0.01 + input.length * 0.001) /
       (type === 'probit' ? Math.PI / Math.sqrt(3) : 1)
   );
 
-  for (let index = 0; index < 500; index++) {
+  for (let index = 0; index < 1000; index++) {
     optimizer.minimize(
       () => {
         const currentLoss = loss(u(x), y);
@@ -134,10 +133,16 @@ const useRegression = (
         } as History);
         if (index > 10) {
           if (
-            returnValue.history[returnValue.history.length - 1].loss ===
-            returnValue.history[returnValue.history.length - 11].loss
+            Math.abs(
+              parseFloat(
+                returnValue.history[returnValue.history.length - 1].loss
+              ) -
+                parseFloat(
+                  returnValue.history[returnValue.history.length - 11].loss
+                )
+            ) < 0.0005
           ) {
-            index = 500;
+            index = 1000;
           }
         }
         if (index % 25 === 0) {
@@ -148,9 +153,6 @@ const useRegression = (
       true,
       [weights, bias]
     );
-    // console.log(weights.dataSync());
-    // console.log(bias.dataSync());
-    // console.log(loss(container.m(x), tf.tensor(y)).dataSync());
   }
 
   returnValue.means = returnValue.means.map(item => item.toFixed(3));

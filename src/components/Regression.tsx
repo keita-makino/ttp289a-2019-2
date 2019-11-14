@@ -4,8 +4,7 @@ import {
   TableHead,
   TableCell,
   TableRow,
-  TableBody,
-  Typography
+  TableBody
 } from '@material-ui/core';
 import * as tf from '@tensorflow/tfjs';
 
@@ -14,6 +13,7 @@ import dictionary from '../data/dictionary.json';
 import Chart from './Chart';
 
 type Props = {
+  hideDetails?: boolean;
   type: 'logit' | 'probit';
   data: any[];
   input: {
@@ -82,38 +82,43 @@ const Regression: React.FC<Props> = (props: Props) => {
                 </TableRow>
               </TableHead>
               <TableBody>
-                <TableRow>
-                  <TableCell>(bias)</TableCell>
-                  <TableCell>-</TableCell>
-                  <TableCell>-</TableCell>
-                  <TableCell>{lastState.bias}</TableCell>
-                  <TableCell>
-                    {stats.tValue[0]}
-                    {getP(stats.tValue[0]) < 0.05 ? '*' : null}
-                  </TableCell>
-                </TableRow>
-                {props.input.length === 0
-                  ? null
-                  : lastState.weights.map((item, index) => {
-                      const key = props.input[index]
-                        .name as keyof typeof dictionary;
-                      return (
-                        <TableRow>
-                          <TableCell>{dictionary[key]}</TableCell>
-                          <TableCell>{stats.sds[index]}</TableCell>
-                          <TableCell>{stats.means[index]}</TableCell>
-                          <TableCell>{item}</TableCell>
-                          <TableCell>
-                            {stats.tValue[index + 1]}
-                            {getP(stats.tValue[index + 1]) < 0.05
-                              ? '**'
-                              : getP(stats.tValue[index + 1]) < 0.1
-                              ? '*'
-                              : null}
-                          </TableCell>
-                        </TableRow>
-                      );
-                    })}
+                {props.hideDetails ? null : (
+                  <>
+                    <TableRow>
+                      <TableCell>(bias)</TableCell>
+                      <TableCell>-</TableCell>
+                      <TableCell>-</TableCell>
+                      <TableCell>{lastState.bias}</TableCell>
+                      <TableCell>
+                        {stats.tValue[0]}
+                        {getP(stats.tValue[0]) < 0.05 ? '*' : null}
+                      </TableCell>
+                    </TableRow>
+                    {props.input.length === 0
+                      ? null
+                      : lastState.weights.map((item, index) => {
+                          const key = props.input[index]
+                            .name as keyof typeof dictionary;
+                          return (
+                            <TableRow>
+                              <TableCell>{dictionary[key]}</TableCell>
+                              <TableCell>{stats.sds[index]}</TableCell>
+                              <TableCell>{stats.means[index]}</TableCell>
+                              <TableCell>{item}</TableCell>
+                              <TableCell>
+                                {stats.tValue[index + 1]}
+                                {getP(stats.tValue[index + 1]) < 0.05
+                                  ? '**'
+                                  : getP(stats.tValue[index + 1]) < 0.1
+                                  ? '*'
+                                  : null}
+                              </TableCell>
+                            </TableRow>
+                          );
+                        })}
+                  </>
+                )}
+
                 <TableRow style={{ backgroundColor: '#DDDDDD' }}>
                   <TableCell rowSpan={2}>Statistics</TableCell>
                   <TableCell>log-likelihood</TableCell>
@@ -148,10 +153,12 @@ const Regression: React.FC<Props> = (props: Props) => {
           return (
             <Chart
               title={props.outPlot.title}
-              output={lastState.estimate}
-              truth={props.data.map(item =>
-                item['C3H17M'] === 1 ? 'true' : 'false'
-              )}
+              output={lastState.estimate.map(item => (item === 'true' ? 1 : 0))}
+              truth={props.data.map(item => item['C3H17M'])}
+              data={props.input.map(item => ({
+                label: item.name,
+                values: props.data.map(item2 => item2[item.name])
+              }))}
             ></Chart>
           );
         }

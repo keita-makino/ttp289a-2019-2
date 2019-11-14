@@ -1,8 +1,8 @@
 import Regression from '../components/Regression';
 import data from '../data/data.json';
-import { jStat } from 'jstat';
 import GetImage from '../components/GetImage';
 import image1 from '../image/image1.jpg';
+import GetPVal from '../components/GetPVal';
 
 # Part 2
 
@@ -15,27 +15,29 @@ $$
   U_{Tn} = \alpha_T + \epsilon_{Tn} \\
   U_{Cn} = \epsilon_{Cn}
 \end{cases}
+$$
+
+$$
 \begin{cases}
   V_{Tn} = \alpha_T \\
   V_{Cn} = 0
 \end{cases}
 $$
 
-Where $U_Tn, U_Nn, \epsilon_Tn$ and $\epsilon_Nn$ is respectively represents the utility function of alternative $T$ (telecommuting), that of alternative $C$ (commuting), and two random variables for the two alternatives to the individual $n ~ (1 < n < 337)$.  
-Another term $\alpha$ stands for the alternative-specific constant (bias) factor.
+Where $U_{Tn}, U_{Cn}, \epsilon_{Tn}$ and $\epsilon_{Cn}$ is respectively represents the utility function of alternative $T$ (telecommuting), that of alternative $C$ (commuting), and two random variables for the two alternatives to the individual $n ~ (1 < n < 337)$.  
+Another term $\alpha$ stands for the alternative-specific bias (constant) factor.
 
 Given the utility function above, the probability that the individual $n$ will choose alternative $T$ is
 
 $$
 \begin{aligned}
-P_n(T) &= \frac{\exp(V_{Tn})}{\exp(V_{Tn} + \exp(V_{Cn}))} \\
-&= \frac{\exp(V_{Tn})}{\exp(V_{Tn} + 1)}
-&= \frac{\exp(\alpha)}{\exp(\alpha) + 1)}
+P_n(T) &= \frac{\exp(V_{Tn})}{\exp(V_{Tn}) + \exp(V_{Cn})} \\
+&= \frac{\exp(V_{Tn})}{\exp(V_{Tn}) + 1} \\
+&= \frac{\exp(\alpha_T)}{\exp(\alpha_T) + 1}
 \end{aligned}
 $$
 
-Hence, the constant term indirectly represents for the probability for an individual $n$ to choose alternative $T$.  
-This characteristics does not change even if we add other variables in the model (Consider changing $\alpha$ to $\alpha + \beta_0 X_0$).
+Hence, the constant term indirectly represents for the probability for an individual $n$ to choose alternative $T$. This characteristics does not change even if we add other variables in the model (Consider changing $\alpha$ to $\alpha + \beta_0 X_0$).
 
 Figure 1 below clearly illustrates this idea. The righthand probabilty curve is distorted lower than the lefthand one.
 
@@ -47,7 +49,7 @@ Figure 1 below clearly illustrates this idea. The righthand probabilty curve is 
 In particularly market share model, we can immeidately estimate the market share from the value of bias, because it is guaranteed that there are no effect from the varibles.  
 If this term become negative, it indicates that less than 50% of population would choose the alternative $T$.
 
----
+### Market Share Model
 
 The details of our Market Share model (MS model) which is programatically computed is listed below.
 
@@ -58,23 +60,13 @@ The details of our Market Share model (MS model) which is programatically comput
   table={{ title: 'Table 1. Market Share Model' }}
 />
 
-As the star next to the t-statistic shows, the bias term is significant (with 95% confidential level) based on t-test. Note that we have approximated the t-distribution used in the test to normal distribution as the sample size is enough large.  
-It means that adding this "variable" has improved the model significantly.
+As the star next to the t-statistic shows, the bias term is significant (with 95% confidential level) based on t-test. Note that we have approximated the t-distribution used in the test to normal distribution as the sample size is enough large. It means that adding this "variable", which is equivalent to making this MS model, has improved the model performance significantly.
 
-According to the likelihood we calculated, our market share model is slightly better than the equal likely model. However, both of their likelihood (-230.577 and -233.591) are still far away from the perfect model whose log likelihood is 0. It is not surprising that the market share model just improved a little bit, because we didn’t incorporate any independent variables into the model. With more information included, the model will have a better prediction.
+However, both of their likelihood (-230.577 and -233.591) are still far away from the perfect model whose log likelihood is 0. It is not surprising that the market share model just improved a little bit, because we didn’t incorporate any independent variables into the model. With more information included, the model will have a better prediction.
 
-The log-likelihood of Equal Likely model (EL model) is -233.577 (see section 4). Using this and the log-likelihood of MS model shown above, we can make a chi-squared test with log-likelihood ratio ($LR$):
+Another way to examine the performance of this MS models is chi-squared test. Using the log-likelihood of MS model and Equal Likely model (EL model) shown above, we can make a chi-squared test with log-likelihood ratio ($LR$):
 
-export const PVal = props => {
-  const p = 1 - jStat.chisquare.cdf(props.x, props.k);
-  console.log(p);
-  if (p === '0') {
-    console.log('p-value is less than 1.0e-16');
-  }
-  return <></>;
-};
-
-<PVal x={6.028} k={1} />
+<GetPVal x={6.028} k={1} />
 
 $$
 \begin{aligned}
@@ -91,7 +83,7 @@ $$
 \end{aligned}
 $$
 
-The result indicates that the MS model is significantly better than the EL model with 95% confidential level.
+Where $f(x, 1)$ represents for the partial density function of chi-squared distribution with 1 degree of freedom. Under the hypothesis that the performance of MS model is not significantly different from that of EL model, the log-likelihood ratio will follow the distribution. Therefore, the probability of observing $6.028$ is enough small to reject this hypothesis. It assures that the MS model is significantly better than the EL model with 95% confidential level.
 
 ## 4.
 

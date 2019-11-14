@@ -2,6 +2,7 @@ import Regression from '../components/Regression';
 import data from '../data/data.json';
 import getValidResponses from '../utils/getValidResponses';
 import { jStat } from 'jstat';
+import GetPVal from '../components/GetPVal';
 
 export const indices = getValidResponses([
   'OVERTIME',
@@ -33,7 +34,7 @@ The details of a logit model with the same variables referred in Mokhtarian and 
   outPlot={{ title: 'Figure 2. Estimate by Basic Logit Model' }}
 />
 
-Looking at the outcome, there are a few variables that have been identified as non-significant due to smaller absolute of t-value. In the original paper, both number of overtime hours and technology constraint had an absolute greater than zero, which indicated that those variables were significant.
+Looking at the outcome, there are a few variables that have been identified as non-significant due to smaller absolute of t-value. In the original paper, both number of overtime hours and technology constraint had much greater absolute value, which indicated that those variables were significant.
 
 Here, the significance of a variable is computed with the following equation.
 
@@ -41,9 +42,9 @@ $$
 \text{(p-value of coefficient } \beta \text{)} = 2 \times \Phi(-|t(\hat{\beta})|) = 2 \times \Phi\left( \frac{-|\hat{\beta}|}{SE(\hat{\beta})} \right)
 $$
 
-where $\Phi$ stands for the cumulative distribution function of standard normal distribution, $t(\hat{\beta})$ is the t-value of the corresponding coefficient, and $SE(\hat{\beta})$ is the standard error of the estimator. Note that we approximated t-distribution to normal distribution as the sample size is large enough.
+where $\Phi$ stands for the cumulative distribution function of standard normal distribution, $t(\hat{\beta})$ is the t-value of the corresponding coefficient, and $SE(\hat{\beta})$ is the standard error of the estimator. Note that we approximated t-distribution to normal distribution as the sample size is large enough [4].
 
-The log-likelihood of this model is much larger than that of MS model shown in section 3. To test this difference is statistically significant, we can perform a Chi-Squared test, which can be written as:
+The log-likelihood of this model is much larger than that of MS model shown in section 3. To test this difference is statistically significant, we can perform a chi-squared test, which can be written as:
 
 $$
 \begin{cases}
@@ -71,16 +72,7 @@ The log-likelihood of MS model with the same dataset (N=333) is shown below.
 
 Thus, the statistic
 
-export const PVal = props => {
-  const p = 1 - jStat.chisquare.cdf(props.x, 7);
-  console.log(p);
-  if (p === '0') {
-    console.log('p-value is less than 1.0e-16');
-  }
-  return <></>;
-};
-
-<PVal x={172.278} />
+<GetPVal x={172.278} k={7} />
 
 $$
 LR = -2(\mathcal{L}_{MS} - \mathcal{L}_{BS}) = -2(-228.034 + 141.395) = 172.278 \\
@@ -89,8 +81,7 @@ $$
 
 indicates that the new BS model is significantly better than the MS model.
 
-The bias (constant) term has been drastically increased from the MS model. This is because, in the BS model, an observation whose all the $X$ values are zero already has a certain information.  
-Looking at the S.D. and mean of the variables, for example, number of overtimes hours have its mean at 3.907. This means that a survey participant who with the variable of zero hours has much smaller value of utility function than the others. The same principle applies to other variables, leading that a person with zero vector of variables does no longer mean "neutral" but somehow "characteristic" property of an observation.
+The bias (constant) term has been drastically increased from the MS model. This is because, in the BS model, an observation whose all the $X$ values are zero already has a certain information. Looking at the S.D. and mean of the variables, for example, number of overtimes hours have its mean at 3.907. This means that a survey participant who with the variable of zero overtime hours has much smaller value of utility function than the others. The same principle applies to other variables, leading that a person with zero vector of variables does no longer mean "neutral" but somehow "characteristic" property of an observation.
 
 In detail, let $S_{n}$ be the deterministic part of the utility function for individual $n$, but without the bias term. By summing up the mean of variables times their coefficient,
 
@@ -115,7 +106,7 @@ V_T = \alpha \\
 P_T = \Phi\left( \sqrt{3} V_T / \pi \right) = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\sqrt{3} V_T / \pi}\exp\left(\frac{-u^2}{2}\right)du = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\sqrt{3}\alpha / \pi}\exp\left(\frac{-u^2}{2}\right)du
 $$
 
-where $V_{Tn}$ is the deterministic part of the utility function, and $P_T{n}$ is the probability that a survey participant will choose telecommuting. Note that we assume a standard deviation $\sigma = \pi / \sqrt{3}$ to make the coefficient comparable to the logit models.
+where $V_{Tn}$ is the deterministic part of the utility function, and $P_{Tn}$ is the probability that a survey participant will choose telecommuting. Note that we assume a standard deviation $\sigma = \pi / \sqrt{3}$ to make the coefficient comparable to the logit models.
 
 Similar to the market share logit model, the probability of choosing telecommuting is not depending on the property of the participants and become constant (note there are no variable in the most-right term of the probability.)
 
@@ -138,7 +129,7 @@ export const PhiVal = props => {
 <PhiVal x={-0.305} />
 
 $$
-P_T = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{-0.305 \sqrt{3} / \pi}\exp\left(\frac{-u^2}{2}\right)du = 0.433
+P_{Tn} = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{-0.305 \sqrt{3} / \pi}\exp\left(\frac{-u^2}{2}\right)du = 0.433
 $$
 
-that matches the tru market share $146/337$.
+that matches the true market share $146/337$.

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   XYPlot,
   MarkSeries,
@@ -9,15 +9,13 @@ import {
   MarkSeriesPoint,
   ChartLabel
 } from 'react-vis';
-import { Box, Typography } from '@material-ui/core';
-import { data } from '@tensorflow/tfjs';
+import { Box, Typography, Button, Icon } from '@material-ui/core';
 
 type Props = {
   title: string;
-  output: string[];
-  truth: string[];
-  x?: DataSeries;
-  y?: DataSeries;
+  output: number[];
+  truth: number[];
+  data: typeof initial[];
 };
 
 export type DataSeries = {
@@ -25,39 +23,49 @@ export type DataSeries = {
   values: number[];
 };
 
-const Chart: React.FC<Props> = (props: Props) => {
-  const dataTT = props.output
-    .map((item, index) => ({ index: index, value: item }))
-    .filter(item => item.value === 'true')
-    .filter(item => props.truth[item.index] === 'true');
-  const dataTF = props.output
-    .map((item, index) => ({ index: index, value: item }))
-    .filter(item => item.value === 'true')
-    .filter(item => props.truth[item.index] === 'false');
-  const dataFF = props.output
-    .map((item, index) => ({ index: index, value: item }))
-    .filter(item => item.value === 'false')
-    .filter(item => props.truth[item.index] === 'false');
-  const dataFT = props.output
-    .map((item, index) => ({ index: index, value: item }))
-    .filter(item => item.value === 'false')
-    .filter(item => props.truth[item.index] === 'true');
+const initial = { label: '', values: [] as number[] };
 
-  const dataArray = [dataTT, dataTF, dataFF, dataFT].map(array => {
-    if (props.x === undefined && props.y === undefined) {
-      return array.map(item => ({ x: item.index, y: item.value }));
-    } else if (props.y === undefined) {
-      return array.map((item, index) => ({
-        x: props.x!.values[index],
-        y: item.value
-      }));
-    } else {
-      return array.map((item, index) => ({
-        x: props.x!.values[index],
-        y: props.y!.values[index]
-      }));
+const Chart: React.FC<Props> = (props: Props) => {
+  const labels = props.data.map(item => item.label);
+  const [show, setShow] = useState(false);
+  const [X, setX] = useState('');
+  const [Y, setY] = useState('');
+
+  const indexer = Array(4)
+    .fill(0)
+    .map(item => Array(0));
+
+  props.output.map((item, index) => {
+    const comb = [item, props.truth[index]];
+    if (item === 1 && props.truth[index] === 1) {
+      indexer[0].push(index);
+    } else if (item === 1 && props.truth[index] === 0) {
+      indexer[1].push(index);
+    } else if (item === 0 && props.truth[index] === 0) {
+      indexer[2].push(index);
+    } else if (item === 0 && props.truth[index] === 1) {
+      indexer[3].push(index);
     }
   });
+  console.log(indexer);
+
+  let dataArray;
+  if (X === '' && Y === '') {
+    dataArray = indexer.map(array =>
+      array.map(item => ({ x: item, y: props.truth[item] }))
+    );
+  } else if (Y === '') {
+    const arrayX = props.data.filter(item => item.label === X)[0].values;
+    dataArray = indexer.map(array =>
+      array.map(item => ({ x: arrayX[item], y: props.truth[item] }))
+    );
+  } else {
+    const arrayX = props.data.filter(item => item.label === X)[0].values;
+    const arrayY = props.data.filter(item => item.label === Y)[0].values;
+    dataArray = indexer.map(array =>
+      array.map(item => ({ x: arrayX[item], y: arrayY[item] }))
+    );
+  }
 
   return (
     <Box
@@ -67,26 +75,26 @@ const Chart: React.FC<Props> = (props: Props) => {
       <XYPlot
         colorType="literal"
         width={720}
-        height={480}
-        yType={props.y === undefined ? 'ordinal' : props.y.label}
-        margin={{ left: 85, bottom: 60, right: 25 }}
+        height={360}
+        margin={{ left: 85, bottom: 65, right: 25 }}
+        yType={Y === '' ? 'ordinal' : 'linear'}
       >
         <VerticalGridLines />
         <HorizontalGridLines />
         <XAxis />
         <YAxis />
         <ChartLabel
-          text={props.x ? props.x.label : 'Index of respondent'}
-          xPercent={0.5}
-          yPercent={0.8}
+          text={X !== '' ? X : 'Index of respondent'}
+          xPercent={0.47}
+          yPercent={0.72}
           style={{
             textAnchor: 'center'
           }}
         />
         <ChartLabel
-          text={props.y ? props.y.label : 'Telecommuting (Predicted)'}
+          text={Y !== '' ? Y : 'Telecommuting (Predicted)'}
           xPercent={0.03}
-          yPercent={0.5}
+          yPercent={0.48}
           style={{
             transform: 'rotate(-90)',
             textAnchor: 'center'
@@ -99,35 +107,109 @@ const Chart: React.FC<Props> = (props: Props) => {
         ></MarkSeries>
         <MarkSeries
           animation={'stiff'}
-          color={'#993333'}
-          data={dataArray[2] as MarkSeriesPoint[]}
-        ></MarkSeries>
-        <MarkSeries
-          animation={'stiff'}
           color={'#7777FF'}
           data={dataArray[1] as MarkSeriesPoint[]}
         ></MarkSeries>
         <MarkSeries
           animation={'stiff'}
           color={'#333399'}
+          data={dataArray[2] as MarkSeriesPoint[]}
+        ></MarkSeries>
+        <MarkSeries
+          animation={'stiff'}
+          color={'#993333'}
           data={dataArray[0] as MarkSeriesPoint[]}
         ></MarkSeries>
       </XYPlot>
-
-      <Box margin={'0.25rem'}>
-        <b>
-          {props.title} (Pred. true=
-          {props.output.filter(item => item === 'true').length}, Actual true=
-          {props.truth.filter(item => item === 'true').length})
-        </b>
-        <br />
-        <span>
-          Blue and red color respectively represents that the estimate is true
-          (doing telecommuting).
-          <br />
-          Thicker color represents that the estimate was correct.
-        </span>
+      <Box
+        display={'flex'}
+        justifyContent={'space-between'}
+        alignItems={'center'}
+        margin={'0.25rem'}
+      >
+        <Box>
+          <b>
+            {props.title} (Pred. true=
+            {props.output.filter(item => item === 1).length}, Actual true=
+            {props.truth.filter(item => item === 1).length})
+          </b>
+          {props.title === 'Figure 2. Estimate by Basic Logit Model' ? (
+            <>
+              <br />
+              <span>
+                Blue / red color respectively represents that the estimate is
+                true (doing telecommuting).
+                <br />
+                Thicker color represents that the estimate was correct.
+              </span>
+            </>
+          ) : null}
+        </Box>
+        <Box>
+          <Button
+            onClick={() => {
+              setShow(!show);
+            }}
+            size="small"
+            variant="contained"
+            style={{
+              marginLeft: '0.8rem'
+            }}
+          >
+            +
+          </Button>
+        </Box>
       </Box>
+
+      {show ? (
+        <>
+          <hr />
+
+          <Box
+            display={'flex'}
+            flexWrap="wrap"
+            alignItems={'center'}
+            margin={'0.25rem'}
+          >
+            <Typography>x:</Typography>
+            {labels.map(item => (
+              <Button
+                onClick={() => {
+                  setX(item);
+                }}
+                style={{ margin: '0.5rem' }}
+                variant="contained"
+              >
+                {item}
+              </Button>
+            ))}
+          </Box>
+        </>
+      ) : null}
+      {X !== '' ? (
+        <>
+          <hr />
+          <Box
+            display={'flex'}
+            flexWrap="wrap"
+            alignItems={'center'}
+            margin={'0.25rem'}
+          >
+            <Typography>y:</Typography>
+            {labels.map(item => (
+              <Button
+                onClick={() => {
+                  setY(item);
+                }}
+                style={{ margin: '0.5rem' }}
+                variant="contained"
+              >
+                {item}
+              </Button>
+            ))}
+          </Box>
+        </>
+      ) : null}
     </Box>
   );
 };
