@@ -5,7 +5,7 @@ As a homework of TTP289A 2019 Fall: Discrete Choice Modeling.
 # Interactive Plots
 
 Interactive plots will be available in the web version.  
-**The initial computation may take long. Please be patient.**
+**The initial computation may take long. Please be patient.**  
 https://keita-makino.github.io/ttp289a-2019-1/
 
 # References
