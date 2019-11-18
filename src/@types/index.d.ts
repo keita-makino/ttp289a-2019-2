@@ -5,3 +5,4 @@ declare module '*.mdx' {
 
 declare module '@matejmazur/react-katex';
 declare module 'jstat';
+declare module '@mdx-js/react';

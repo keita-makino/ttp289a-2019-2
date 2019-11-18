@@ -1,111 +1,23 @@
-import Regression from '../components/Regression';
-import data from '../data/data.json';
-import GetImage from '../components/GetImage';
-import image1 from '../image/image1.jpg';
-import GetPVal from '../components/GetPVal';
+## 2.
 
-# Part 2
-
-## 3.
-
-The market share model has the following structure:
+### Equal Likely Model
 
 $$
 \begin{cases}
-  U_{Tn} = \alpha_T + \epsilon_{Tn} \\
-  U_{Cn} = \epsilon_{Cn}
+  \mathcal{L}_(0) &= \sum_{i=1}^{N} (y_W ln(P_W(n)) + y_B ln(P_B(n)) + y_C ln(P_B(n)))
+  &= \sum_{i=1}^{N} (y_W ln(1/3) + y_B ln(1/3) + y_C ln(1/3))
+  &= \sum_{i=1}^{N} ln(1/3)
+  &= ln(1/3) N
 \end{cases}
 $$
-
-$$
-\begin{cases}
-  V_{Tn} = \alpha_T \\
-  V_{Cn} = 0
-\end{cases}
-$$
-
-Where $U_{Tn}, U_{Cn}, \epsilon_{Tn}$ and $\epsilon_{Cn}$ is respectively represents the utility function of alternative $T$ (telecommuting), that of alternative $C$ (commuting), and two random variables for the two alternatives to the individual $n ~ (1 < n < 337)$.  
-Another term $\alpha$ stands for the alternative-specific bias (constant) factor.
-
-Given the utility function above, the probability that the individual $n$ will choose alternative $T$ is
-
-$$
-\begin{aligned}
-P_n(T) &= \frac{\exp(V_{Tn})}{\exp(V_{Tn}) + \exp(V_{Cn})} \\
-&= \frac{\exp(V_{Tn})}{\exp(V_{Tn}) + 1} \\
-&= \frac{\exp(\alpha_T)}{\exp(\alpha_T) + 1}
-\end{aligned}
-$$
-
-Hence, the constant term indirectly represents for the probability for an individual $n$ to choose alternative $T$. This characteristics does not change even if we add other variables in the model (Consider changing $\alpha$ to $\alpha + \beta_0 X_0$).
-
-Figure 1 below clearly illustrates this idea. The righthand probabilty curve is distorted lower than the lefthand one.
-
-<GetImage
-  image={image1}
-  text={'Figure 1. Probability with different coefficients [3]'}
-/>
-
-In particularly market share model, we can immeidately estimate the market share from the value of bias, because it is guaranteed that there are no effect from the varibles.  
-If this term become negative, it indicates that less than 50% of population would choose the alternative $T$.
 
 ### Market Share Model
 
-The details of our Market Share model (MS model) which is programatically computed is listed below.
-
-<Regression
-  type={'logit'}
-  data={data}
-  input={[]}
-  table={{ title: 'Table 1. Market Share Model' }}
-/>
-
-As the star next to the t-statistic shows, the bias term is significant (with 95% confidential level) based on t-test. Note that we have approximated the t-distribution used in the test to normal distribution as the sample size is enough large. It means that adding this "variable", which is equivalent to making this MS model, has improved the model performance significantly.
-
-However, both of their likelihood (-230.577 and -233.591) are still far away from the perfect model whose log likelihood is 0. It is not surprising that the market share model just improved a little bit, because we didn’t incorporate any independent variables into the model. With more information included, the model will have a better prediction.
-
-Another way to examine the performance of this MS models is chi-squared test. Using the log-likelihood of MS model and Equal Likely model (EL model) shown above, we can make a chi-squared test with log-likelihood ratio ($LR$):
-
-<GetPVal x={6.028} k={1} />
-
 $$
-\begin{aligned}
-LR &= -2(\mathcal{EL} - \mathcal{MS})
-&= -2(-233.591 + 230.577)
-&= 6.028
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
-\text{(p-value)} &= 1 - \int_{-\infty}^{6.028} f(x,1) dx
-&= 0.014
-\end{aligned}
-$$
-
-Where $f(x, 1)$ represents for the partial density function of chi-squared distribution with 1 degree of freedom. Under the hypothesis that the performance of MS model is not significantly different from that of EL model, the log-likelihood ratio will follow the distribution. Therefore, the probability of observing $6.028$ is enough small to reject this hypothesis. It assures that the MS model is significantly better than the EL model with 95% confidential level.
-
-## 4.
-
-The log-likelihood of EL model can be written as:
-
-$$
-\begin{aligned}
-\mathcal{L}_{EL} &= \sum_{i=1}^{337} \left(y_{in} ln\left(\frac{1}{2}\right) + (1 - y_{in}) ln\left(\frac{1}{2}\right)\right) \\
-&= ln\left(\frac{1}{2}\right) \sum_{i=1}^{337} (1) \\
-&= 337 ln\left(\frac{1}{2}\right) \\
-&= -233.6
-\end{aligned}
-$$
-
-The log-likelihood of MS model is:
-
-$$
-\begin{aligned}
-\mathcal{L}_{MS} &= \sum_{i=1}^{337} \left(y_{in} ln\left(\frac{146}{337}\right) + (1 - y_{in}) ln\left(\frac{191}{337}\right)\right) \\
-&= ln\left(\frac{146}{337}\right) \sum_{i=1}^{337} (y_{in}) + ln\left(\frac{191}{337}\right) \sum_{i=1}^{337} (1 - y_{in}) \\
-&= 146 ln\left(\frac{146}{337}\right) + 191 ln\left(\frac{191}{337}\right) \\
-&= -122.13 -108.45  \\
-&= -230.6
-\end{aligned}
+\begin{cases}
+  \mathcal{L}_(0) &= \sum_{i=1}^{N} (y_W ln(P_W(n)) + y_B ln(P_B(n)) + y_C ln(P_B(n)))
+  &= \sum_{i=1}^{N} (y_W ln(1/3) + y_B ln(1/3) + y_C ln(1/3))
+  &= \sum_{i=1}^{N} ln(1/3)
+  &= ln(1/3) N
+\end{cases}
 $$

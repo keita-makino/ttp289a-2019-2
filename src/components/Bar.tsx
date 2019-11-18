@@ -36,27 +36,27 @@ const getFreq = (data: number[], xMin: number, xMax: number) => {
 };
 
 const Bar: React.FC<Props> = (props: Props) => {
-  const mergedData = data
-    .map(item => ({
-      gender: item['FEMALE'],
-      value: item[props.label as keyof typeof data[0]]!
-    }))
-    .filter(item => item.value !== null);
-  const xMin = Math.min(...mergedData.map(item => item.value));
-  const xMax = Math.max(...mergedData.map(item => item.value));
-  const freqM = getFreq(
-    mergedData.filter(item => item.gender === 0).map(item => item.value),
-    xMin,
-    xMax
-  );
-  const freqF = getFreq(
-    mergedData.filter(item => item.gender === 1).map(item => item.value),
-    xMin,
-    xMax
-  );
+  // const mergedData = data
+  //   .map(item => ({
+  //     gender: item['FEMALE'],
+  //     value: item[props.label as keyof typeof data[0]]!
+  //   }))
+  //   .filter(item => item.value !== null);
+  // const xMin = Math.min(...mergedData.map(item => item.value));
+  // const xMax = Math.max(...mergedData.map(item => item.value));
+  // const freqM = getFreq(
+  //   mergedData.filter(item => item.gender === 0).map(item => item.value),
+  //   xMin,
+  //   xMax
+  // );
+  // const freqF = getFreq(
+  //   mergedData.filter(item => item.gender === 1).map(item => item.value),
+  //   xMin,
+  //   xMax
+  // );
   return (
     <>
-      <Box
+      {/* <Box
         margin={'0.6rem 0 0.6rem 0'}
         style={{ boxSizing: 'border-box', border: '1px gray solid' }}
       >
@@ -105,7 +105,7 @@ const Bar: React.FC<Props> = (props: Props) => {
             </>
           ) : null}
         </Box>
-      </Box>
+      </Box> */}
     </>
   );
 };
