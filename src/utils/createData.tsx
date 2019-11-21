@@ -2,23 +2,27 @@ import data from '../data/data.json';
 import { Input, Data } from '../data/Data';
 
 const createData = (input: Input[]) => {
-  const array = (data as any[]).reduce(
-    (acc: number[], current: Data, index: number) => {
+  const stats = input.reduce((acc, current) => {
+    return { ...acc, [current]: { mean: 0, sd: 0 } };
+  }, {});
+
+  const array = (data as Data[]).reduce(
+    (acc: any[], current: Data, index: number) => {
       let isInvalid = false;
-      input.map(item => {
-        if (current[item as keyof typeof data[0]] === null) {
-          isInvalid = true;
-        }
-      });
-      if (!isInvalid) {
-        return [...acc, index];
-      } else {
-        return acc;
-      }
+      const record = input.reduce(
+        (acc2: any, current2: Input, index2: number) => {
+          if (current[current2] === null) {
+            isInvalid = true;
+          }
+          return { ...acc2, current2: current[current2] };
+        },
+        {}
+      );
+      return isInvalid ? [...acc] : [...acc, record];
     },
-    [] as number[]
+    [] as any[]
   );
-  return array;
+  return { array: array };
 };
 
 export default createData;

@@ -1,5 +1,5 @@
 import * as tf from '@tensorflow/tfjs';
-import { Data } from '../data/Data';
+import { Data, Input } from '../data/Data';
 
 type History = {
   weights: string[];
@@ -10,30 +10,43 @@ type History = {
 
 const useRegression = (
   data: Data[],
-  input: (keyof Data)[],
-  targetVariable: keyof Data,
+  inputs: Input[],
+  targetVariable: Input,
   dim: number
 ) => {
-  // const returnValue = {
-  //   history: [] as History[],
-  //   lastState: {} as History,
-  //   means: [] as any[],
-  //   sds: [] as any[],
-  //   coefSds: [] as any[],
-  //   tValue: [] as any[],
-  //   rho: '',
-  //   rho2: ''
-  // };
-  // const xData = Array(Math.max(1, input.length))
-  //   .fill(0)
-  //   .map(() => Array(data.length).fill(0));
-  // if (input.length > 0) {
-  //   input.map((item, index) => {
-  //     data.map((item2, index2) => {
-  //       xData[index][index2] = item2[item];
-  //     });
-  //   });
-  // }
+  const returnValue = {
+    history: [] as History[],
+    lastState: {} as History,
+    means: [] as any[],
+    sds: [] as any[],
+    coefSds: [] as any[],
+    tValue: [] as any[],
+    rho: '',
+    rho2: ''
+  };
+
+  const xData = Array(data.length)
+    .fill(0)
+    .map(() =>
+      Array(Math.max(dim - 1, inputs.length + dim - 1))
+        .fill(0)
+        .map(() => Array(dim).fill(0))
+    );
+
+  xData.map((record, recordIndex) => {
+    record.map((obs, obsIndex) => {
+      if (obsIndex < dim - 1) {
+        xData[recordIndex][obsIndex][obsIndex] = 1;
+      }
+      if (inputs.length > 0) {
+        inputs.map((input, inputIndex) => {
+          xData[recordIndex][obsIndex][inputIndex + dim - 1] =
+            data[dim * recordIndex + obsIndex][input];
+        });
+      }
+    });
+  });
+
   // xData.map((item, index) => {
   //   returnValue.means[index] = tf.moments(tf.tensor(item)).mean.dataSync()[0];
   //   returnValue.sds[index] = tf
@@ -43,20 +56,20 @@ const useRegression = (
   // });
   // const yData = data.map(item => item[targetVariable]);
   // let x: any;
-  // if (input.length > 0) {
+  // if (inputs.length > 0) {
   //   x = tf.tidy(() =>
   //     tf
-  //       .tensor2d(xData, [input.length, data.length])
+  //       .tensor2d(xData, [inputs.length, data.length])
   //       .sub(
   //         tf
   //           .tensor(returnValue.means)
-  //           .as2D(input.length, 1)
+  //           .as2D(inputs.length, 1)
   //           .tile([1, data.length])
   //       )
   //       .div(
   //         tf
   //           .tensor(returnValue.sds)
-  //           .as2D(input.length, 1)
+  //           .as2D(inputs.length, 1)
   //           .tile([1, data.length])
   //       )
   //   );
@@ -65,7 +78,7 @@ const useRegression = (
   // }
   // const y = tf.tidy(() => tf.tensor(yData));
   // const weights = tf.tidy(() =>
-  //   tf.variable(tf.zeros([1, Math.max(1, input.length)]), true)
+  //   tf.variable(tf.zeros([1, Math.max(1, inputs.length)]), true)
   // );
   // const bias = tf.tidy(() => tf.variable(tf.tensor([0]), true));
   // const u = (x: any) => {
@@ -92,7 +105,7 @@ const useRegression = (
   //   ) as tf.Tensor<tf.Rank.R0>;
   // };
   // const optimizer = tf.train.sgd(
-  //   (0.01 + input.length * 0.001) /
+  //   (0.01 + inputs.length * 0.001) /
   //     (type === 'probit' ? Math.PI / Math.sqrt(3) : 1)
   // );
   // for (let index = 0; index < 1000; index++) {
@@ -152,7 +165,7 @@ const useRegression = (
   // returnValue.rho = (1 - logLikelihood / logLikelihoodEL).toFixed(3);
   // returnValue.rho2 = (
   //   1 -
-  //   (logLikelihood - input.length - dim + 1) / logLikelihoodEL
+  //   (logLikelihood - inputs.length - dim + 1) / logLikelihoodEL
   // ).toFixed(3);
   // const xs = tf.tidy(() => tf.tensor([Array(data.length).fill(1), ...xData]));
   // const v = tf.tidy(() =>
