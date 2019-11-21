@@ -1,8 +1,9 @@
 import data from '../data/data.json';
+import { Input, Data } from '../data/Data';
 
-const getValidResponses = (input: string[]) => {
+const createData = (input: Input[]) => {
   const array = (data as any[]).reduce(
-    (acc: number[], current: typeof data[0], index: number) => {
+    (acc: number[], current: Data, index: number) => {
       let isInvalid = false;
       input.map(item => {
         if (current[item as keyof typeof data[0]] === null) {
@@ -20,4 +21,4 @@ const getValidResponses = (input: string[]) => {
   return array;
 };
 
-export default getValidResponses;
+export default createData;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Table,
   TableHead,
@@ -13,14 +13,6 @@ import dictionary from '../data/dictionary.json';
 import Chart from './Chart';
 
 type Props = {
-  hideDetails?: boolean;
-  type: 'logit' | 'probit';
-  data: any[];
-  input: {
-    name: string;
-    location: number;
-    type?: string;
-  }[];
   table: Table;
   outPlot: OutPlot;
 };
@@ -45,26 +37,21 @@ const getP = (t: string) => {
 };
 
 const Regression: React.FC<Props> = (props: Props) => {
-  const result = useRegression(
-    props.type,
-    props.data,
-    props.input,
-    'C3H17M',
-    2
-  );
-  const lastState = result.lastState;
-  const stats = (({ sds, means, rho, rho2, coefSds, tValue }) => ({
-    sds,
-    means,
-    rho,
-    rho2,
-    coefSds,
-    tValue
-  }))(result);
+  // const data = createData(props.inputs);
+  // const result = useRegression();
+  // const lastState = result.lastState;
+  // const stats = (({ sds, means, rho, rho2, coefSds, tValue }) => ({
+  //   sds,
+  //   means,
+  //   rho,
+  //   rho2,
+  //   coefSds,
+  //   tValue
+  // }))(result);
 
   return (
     <>
-      {(() => {
+      {/* {(() => {
         if (props.table !== null) {
           return (
             <Table size="small">
@@ -162,7 +149,7 @@ const Regression: React.FC<Props> = (props: Props) => {
             ></Chart>
           );
         }
-      })()}
+      })()} */}
     </>
   );
 };

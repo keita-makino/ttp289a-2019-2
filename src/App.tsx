@@ -1,7 +1,7 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
 
-import Document from './components/Document';
+import Document from './document/index.mdx';
 import './App.css';
 import 'katex/dist/katex.min.css';
 
