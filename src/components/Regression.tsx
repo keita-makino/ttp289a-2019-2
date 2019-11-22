@@ -8,11 +8,14 @@ import {
 } from '@material-ui/core';
 import * as tf from '@tensorflow/tfjs';
 
+import createData from '../utils/createData';
 import useRegression from '../utils/useRegression';
 import dictionary from '../data/dictionary.json';
 import Chart from './Chart';
+import { Input } from '../data/Data';
 
 type Props = {
+  inputs: Input[];
   table: Table;
   outPlot: OutPlot;
 };
@@ -37,17 +40,10 @@ const getP = (t: string) => {
 };
 
 const Regression: React.FC<Props> = (props: Props) => {
-  // const data = createData(props.inputs);
-  // const result = useRegression();
-  // const lastState = result.lastState;
-  // const stats = (({ sds, means, rho, rho2, coefSds, tValue }) => ({
-  //   sds,
-  //   means,
-  //   rho,
-  //   rho2,
-  //   coefSds,
-  //   tValue
-  // }))(result);
+  const { data, stats, y } = createData(props.inputs);
+  const result = useRegression(data, props.inputs, y, 3);
+  const lastState = result.lastState;
+  const resultStats = result.stats;
 
   return (
     <>
