@@ -10,12 +10,13 @@ import {
   ChartLabel
 } from 'react-vis';
 import { Box, Typography, Button, Icon } from '@material-ui/core';
+import { Data, Input } from '../data/Data';
 
 type Props = {
   title: string;
   output: number[];
   truth: number[];
-  data: typeof initial[];
+  data: Data[];
 };
 
 export type DataSeries = {
@@ -23,10 +24,8 @@ export type DataSeries = {
   values: number[];
 };
 
-const initial = { label: '', values: [] as number[] };
-
 const Chart: React.FC<Props> = (props: Props) => {
-  const labels = props.data.map(item => item.label);
+  const labels = Object.keys(props.data[0]) as Input[];
   const [show, setShow] = useState(false);
   const [X, setX] = useState('');
   const [Y, setY] = useState('');
@@ -35,44 +34,44 @@ const Chart: React.FC<Props> = (props: Props) => {
     .fill(0)
     .map(item => Array(0));
 
-  props.output.map((item, index) => {
-    const comb = [item, props.truth[index]];
-    if (item === 1 && props.truth[index] === 1) {
-      indexer[0].push(index);
-    } else if (item === 1 && props.truth[index] === 0) {
-      indexer[1].push(index);
-    } else if (item === 0 && props.truth[index] === 0) {
-      indexer[2].push(index);
-    } else if (item === 0 && props.truth[index] === 1) {
-      indexer[3].push(index);
-    }
-  });
-  console.log(indexer);
+  // props.output.map((item, index) => {
+  //   const comb = [item, props.truth[index]];
+  //   if (item === 1 && props.truth[index] === 1) {
+  //     indexer[0].push(index);
+  //   } else if (item === 1 && props.truth[index] === 0) {
+  //     indexer[1].push(index);
+  //   } else if (item === 0 && props.truth[index] === 0) {
+  //     indexer[2].push(index);
+  //   } else if (item === 0 && props.truth[index] === 1) {
+  //     indexer[3].push(index);
+  //   }
+  // });
+  // console.log(indexer);
 
-  let dataArray;
-  if (X === '' && Y === '') {
-    dataArray = indexer.map(array =>
-      array.map(item => ({ x: item, y: props.truth[item] }))
-    );
-  } else if (Y === '') {
-    const arrayX = props.data.filter(item => item.label === X)[0].values;
-    dataArray = indexer.map(array =>
-      array.map(item => ({ x: arrayX[item], y: props.truth[item] }))
-    );
-  } else {
-    const arrayX = props.data.filter(item => item.label === X)[0].values;
-    const arrayY = props.data.filter(item => item.label === Y)[0].values;
-    dataArray = indexer.map(array =>
-      array.map(item => ({ x: arrayX[item], y: arrayY[item] }))
-    );
-  }
+  // let dataArray;
+  // if (X === '' && Y === '') {
+  //   dataArray = indexer.map(array =>
+  //     array.map(item => ({ x: item, y: props.truth[item] }))
+  //   );
+  // } else if (Y === '') {
+  //   const arrayX = props.data.filter(item => item.label === X)[0].values;
+  //   dataArray = indexer.map(array =>
+  //     array.map(item => ({ x: arrayX[item], y: props.truth[item] }))
+  //   );
+  // } else {
+  //   const arrayX = props.data.filter(item => item.label === X)[0].values;
+  //   const arrayY = props.data.filter(item => item.label === Y)[0].values;
+  //   dataArray = indexer.map(array =>
+  //     array.map(item => ({ x: arrayX[item], y: arrayY[item] }))
+  //   );
+  // }
 
   return (
     <Box
       margin={'0.6rem 0 0.6rem 0'}
       style={{ boxSizing: 'border-box', border: '1px gray solid' }}
     >
-      <XYPlot
+      {/*      <XYPlot
         colorType="literal"
         width={720}
         height={360}
@@ -209,7 +208,7 @@ const Chart: React.FC<Props> = (props: Props) => {
             ))}
           </Box>
         </>
-      ) : null}
+      ) : null} */}
     </Box>
   );
 };

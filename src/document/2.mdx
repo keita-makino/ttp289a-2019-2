@@ -3,21 +3,22 @@
 ### Equal Likely Model
 
 $$
-\begin{cases}
-  \mathcal{L}_(0) &= \sum_{i=1}^{N} (y_W ln(P_W(n)) + y_B ln(P_B(n)) + y_C ln(P_B(n)))
-  &= \sum_{i=1}^{N} (y_W ln(1/3) + y_B ln(1/3) + y_C ln(1/3))
-  &= \sum_{i=1}^{N} ln(1/3)
-  &= ln(1/3) N
-\end{cases}
+\begin{aligned}
+  \mathcal{L}(0) &= \sum_{i=1}^{N} (y_W ln(P_W(n)) + y_B ln(P_B(n)) + y_C ln(P_B(n))) \\
+  &= \sum_{i=1}^{N} (y_W ln(1/3) + y_B ln(1/3) + y_C ln(1/3)) \\
+  &= \sum_{i=1}^{N} ln(1/3) \\
+  &= ln(1/3) N \\
+  &= -525.137
+\end{aligned}
 $$
 
 ### Market Share Model
 
 $$
-\begin{cases}
-  \mathcal{L}_(0) &= \sum_{i=1}^{N} (y_W ln(P_W(n)) + y_B ln(P_B(n)) + y_C ln(P_B(n)))
-  &= \sum_{i=1}^{N} (y_W ln(1/3) + y_B ln(1/3) + y_C ln(1/3))
-  &= \sum_{i=1}^{N} ln(1/3)
-  &= ln(1/3) N
-\end{cases}
+\begin{aligned}
+  \mathcal{L}(MS) &= \sum_{i=1}^{N} (y_W ln(P_W(n)) + y_B ln(P_B(n)) + y_C ln(P_B(n))) \\
+  &= 62 \times ln(62/478) + 76 \times ln(76/478) + 340 \times ln(340/478) \\
+  &= -126.633 - 139.755 - 115.826\\
+  &= -382.214
+\end{aligned}
 $$

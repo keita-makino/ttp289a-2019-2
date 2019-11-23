@@ -1,19 +1,5 @@
-import One from '../document/1.mdx';
-import Two from '../document/2.mdx';
-import ComponentWrapper from '../components/ComponentWrapper';
-
-export default ({ children }) => {
-  return (
-    <>
-      {React.Children.map(children, (node, index) => {
-        React.Children.map(node, item => {
-          console.log(item);
-        });
-        return <ComponentWrapper>{node}</ComponentWrapper>;
-      })}
-    </>
-  );
-};
+import One from './1.mdx';
+import Two from './2.mdx';
 
 <One />
 <Two />
