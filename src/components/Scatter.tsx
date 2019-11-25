@@ -10,7 +10,6 @@ import {
 } from 'react-vis';
 import { Box } from '@material-ui/core';
 import data from '../data/data.json';
-import dictionary from '../data/dictionary.json';
 
 type Props = { label: string; title: string; caption: string };
 

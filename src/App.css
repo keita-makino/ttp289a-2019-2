@@ -7,6 +7,11 @@ p {
   font-size: 1rem !important;
 }
 
+.MuiTableCell-root {
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+}
+
 .rv-xy-plot__grid-lines__line {
   stroke: gray;
   stroke-width: 1;

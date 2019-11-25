@@ -9,6 +9,7 @@ import Table from './Table';
 type Props = {
   inputs: Input[];
   base: number;
+  validators?: Input[];
   table?: TableProps;
   outPlot?: OutPlotProps;
 };
@@ -25,7 +26,10 @@ type OutPlotProps = {
 };
 
 const Regression: React.FC<Props> = (props: Props) => {
-  const { data, stats, y } = createData(props.inputs);
+  const { data, stats, y } = createData(
+    props.validators ? props.validators : props.inputs,
+    props.base
+  );
   const [result, loading] = useRegression(data, props.inputs, y, 3, props.base);
 
   return (
@@ -39,6 +43,7 @@ const Regression: React.FC<Props> = (props: Props) => {
           title={props.table.title}
           dataLength={result.lastState.estimate.length}
           hideDetails={props.table.hideDetails}
+          base={props.base}
         />
       ) : (
         <div>loading...</div>

@@ -1,135 +1,18 @@
 import Regression from '../components/Regression';
-import data from '../data/data.json';
-import getValidResponses from '../utils/getValidResponses';
-import { jStat } from 'jstat';
-import GetPVal from '../components/GetPVal';
 
-export const indices = getValidResponses([
-  'OVERTIME',
-  'EFACT9',
-  'EFACT6',
-  'MANCONST',
-  'JOBCONST',
-  'TECHCONS',
-  'CSO9FT2'
-]);
-
-## 5.
-
-The details of a logit model with the same variables referred in Mokhtarian and Salomon (1996) is shown below. We will refer to this model as Basic Model (BS Model) hereafter.
+# 3.
 
 <Regression
-  type={'logit'}
-  data={indices.map(item => data[item])}
-  input={[
-    { name: 'OVERTIME', location: 0, type: 'ASV' },
-    { name: 'EFACT9', location: 0, type: 'ASV' },
-    { name: 'EFACT6', location: 0, type: 'ASV' },
-    { name: 'MANCONST', location: 0, type: 'ASV' },
-    { name: 'JOBCONST', location: 0, type: 'ASV' },
-    { name: 'TECHCONS', location: 0, type: 'ASV' },
-    { name: 'CSO9FT2', location: 0, type: 'ASV' }
+  inputs={[
+    'apd',
+    'opb',
+    'opw',
+    'opc',
+    'f1gensvc',
+    'f2convac',
+    'f3psych',
+    'cost'
   ]}
-  table={{ title: 'Table 2. Basic Logit Model' }}
-  outPlot={{ title: 'Figure 2. Estimate by Basic Logit Model' }}
+  base={2}
+  table={{ title: 'hoge' }}
 />
-
-Looking at the outcome, there are a few variables that have been identified as non-significant due to smaller absolute of t-value. In the original paper, both number of overtime hours and technology constraint had much greater absolute value, which indicated that those variables were significant.
-
-Here, the significance of a variable is computed with the following equation.
-
-$$
-\text{(p-value of coefficient } \beta \text{)} = 2 \times \Phi(-|t(\hat{\beta})|) = 2 \times \Phi\left( \frac{-|\hat{\beta}|}{SE(\hat{\beta})} \right)
-$$
-
-where $\Phi$ stands for the cumulative distribution function of standard normal distribution, $t(\hat{\beta})$ is the t-value of the corresponding coefficient, and $SE(\hat{\beta})$ is the standard error of the estimator. Note that we approximated t-distribution to normal distribution as the sample size is large enough [4].
-
-The log-likelihood of this model is much larger than that of MS model shown in section 3. To test this difference is statistically significant, we can perform a chi-squared test, which can be written as:
-
-$$
-\begin{cases}
-  H_0 \text{: There is no difference between the MS model and BS model} \\
-  H_1 \text{: BS model is better}
-\end{cases}
-$$
-
-The likelihood-ratio ($LR$) is
-
-$$
-LR = -2(\mathcal{L}_{MS} - \mathcal{L}_{BS})
-$$
-
-Under hypothesis $H_0$, this statistic has a chi-squared distribution with $K - 1$ (= number of variables in BS Model - 1) degree of freedom.
-
-The log-likelihood of MS model with the same dataset (N=333) is shown below.
-
-<Regression
-  type={'logit'}
-  data={indices.map(item => data[item])}
-  input={[]}
-  table={{ title: 'Table 3. Market Share Model' }}
-/>
-
-Thus, the statistic
-
-<GetPVal x={172.278} k={7} />
-
-$$
-LR = -2(\mathcal{L}_{MS} - \mathcal{L}_{BS}) = -2(-228.034 + 141.395) = 172.278 \\
-\text{(p-value)} < 1.0e-16
-$$
-
-indicates that the new BS model is significantly better than the MS model.
-
-The bias (constant) term has been drastically increased from the MS model. This is because, in the BS model, an observation whose all the $X$ values are zero already has a certain information. Looking at the S.D. and mean of the variables, for example, number of overtimes hours have its mean at 3.907. This means that a survey participant who with the variable of zero overtime hours has much smaller value of utility function than the others. The same principle applies to other variables, leading that a person with zero vector of variables does no longer mean "neutral" but somehow "characteristic" property of an observation.
-
-In detail, let $S_{n}$ be the deterministic part of the utility function for individual $n$, but without the bias term. By summing up the mean of variables times their coefficient,
-
-$$
-\begin{aligned}
-  S_{average} &= \sum_{i=1}^7\beta_i X_i
-  &= (3.907 \times 0.016 + 0.013 \times 0.730 + ...)
-  &= -1.434
-\end{aligned}
-$$
-
-we can infer that an "average" participant will have a negative value of $S$. Meanwhile, we want the model to output the positive (telecommuting) response at around 45% of the sample. So, a person with average attributes should have a deterministic part of the utility function around -0.269, which has been evaluated through the MS model.
-
-This is the reason why the bias term becomes positive in this BS model. Note that, here we have referred to "average" observation with arithmetic mean for easier representation, but in general it does not necessarily match the representative value of $S$ among the sample. (i.e., $-1.434 + 0.800 \neq -0.269$)
-
-## 6.
-
-The market share probit model has the following structure:
-
-$$
-V_T = \alpha \\
-P_T = \Phi\left( \sqrt{3} V_T / \pi \right) = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\sqrt{3} V_T / \pi}\exp\left(\frac{-u^2}{2}\right)du = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\sqrt{3}\alpha / \pi}\exp\left(\frac{-u^2}{2}\right)du
-$$
-
-where $V_{Tn}$ is the deterministic part of the utility function, and $P_{Tn}$ is the probability that a survey participant will choose telecommuting. Note that we assume a standard deviation $\sigma = \pi / \sqrt{3}$ to make the coefficient comparable to the logit models.
-
-Similar to the market share logit model, the probability of choosing telecommuting is not depending on the property of the participants and become constant (note there are no variable in the most-right term of the probability.)
-
-The details of the model is shown below.
-
-<Regression
-  type={'probit'}
-  data={data}
-  input={[]}
-  table={{ title: 'Table 4. Market Share Probit Model' }}
-/>
-
-Given the bias $\alpha = -0.305$, we can derive
-
-export const PhiVal = props => {
-  console.log(jStat.normal.cdf(props.x, 0, Math.PI / Math.sqrt(3)));
-  return <></>;
-};
-
-<PhiVal x={-0.305} />
-
-$$
-P_{Tn} = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{-0.305 \sqrt{3} / \pi}\exp\left(\frac{-u^2}{2}\right)du = 0.433
-$$
-
-that matches the true market share $146/337$.

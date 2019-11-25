@@ -1,107 +1,18 @@
 import Regression from '../components/Regression';
-import data from '../data/data.json';
-import getValidResponses from '../utils/getValidResponses';
-import { jStat } from 'jstat';
-import { indices } from './3.mdx';
-import Bar from '../components/Bar';
 
-## 7.
-
-The table below shows the details of the probit model which has corresponding variables to BS model used in section 5.
-Overall, the coefficients and significance are similar to the logit model. (Note that, same to section 6. we have used the standard deviation $\sigma = \pi / \sqrt{3}$).
+# 4.
 
 <Regression
-  type={'probit'}
-  data={indices.map(item => data[item])}
-  input={[
-    { name: 'OVERTIME', location: 0, type: 'ASV' },
-    { name: 'EFACT9', location: 0, type: 'ASV' },
-    { name: 'EFACT6', location: 0, type: 'ASV' },
-    { name: 'MANCONST', location: 0, type: 'ASV' },
-    { name: 'JOBCONST', location: 0, type: 'ASV' },
-    { name: 'TECHCONS', location: 0, type: 'ASV' },
-    { name: 'CSO9FT2', location: 0, type: 'ASV' }
+  inputs={[
+    'apd',
+    'opb',
+    'opw',
+    'opc',
+    'f1gensvc',
+    'f2convac',
+    'f3psych',
+    'cost'
   ]}
-  table={{ title: 'Table 5. Basic Probit Model' }}
-  outPlot={{ title: 'Figure 3. Estimate by Basic Probit Model' }}
+  base={1}
+  table={{ title: 'hoge' }}
 />
-
-The market share based on this model was estimated as $155/333 = 46.5%$, whereas in truth it is $145/333 = 43.5%$. Considering the sample size of about 300, it seems fair amount of the error.
-
-## 8.
-
-In the last, we will develop two new models that have some additional variables or features. Those models respectively estimates the working situation (telecommuting or homecommuting) in same group of gender (male or female). We will denote the model for male group as MA model and for female group as FE model.
-
-To compare the effect of variables, we will always include the same set of variables in both of the models.
-
-### Hypotheses
-
-Before selecting the variable in the models, we will go though some general assumptions in the variables.
-
-Firstly, there should be some varibles whose coefficient will significantly differ between MA and FE model. As Mokhtarian et al. (1998) discussed, having children under six significantly have different effect on the occupation of male and female workers. It also refers to the difference in the effect of distractions from household. In our dataset, variable "CHILDLT6 (children less than 6 years of age present in the home)" represents the first idea, and "EFACT1 (family / community directed)" may be relevant to the second concept.
-
-Next, it is also important to consider the variables which are significance to both of the gruops. Huws (1996) has listed autonomy in work, saving travel time and time flexibility are typical common advantages among the both genders. In our dataset, variable "COMMTIME (commute time)", "EFACT9 (commute stress)", "EFACT7 (internal control)" would be related to this idea.
-
-Looking at the dataset itself, there are several variables that would directly associate with the outcome as being telecommuting. For example, "MANDPRV (management disapproves)" will make a fatally negative effect for having a telework. Also, "UNAWARE (person is unaware of telecommuting)" and "JOBHOME (some part of the job can be done from home)" will generally have a strong effect to the outcome. The variables "MANCONST (lack of manager support)", "JOBCONST (job unsuitability)", "TECHCONS (Technology constraint)" and "CSO9FT2 (office discipline)", which are used in the previous BS models will also equally worth for both genders.
-
-Another important topic is to find variables whose significance may differ between genders. Note that this does not necessarily mean the coefficient of the variable would differ between the two models. At this point, Huws also suggested that having children, again, will have a different significance between two groups, as the level of interruption by children will be different. They also mentioned that two gender groups tend to evaluate several advantage / disadvantage, such as comfort, variety of work, irregular payment or time pressure, in different manner. Our data set have several corresponding variables such as "CSO9FT9 (stress)" (note that this is different from commute stress) or "EFACT2 (lack of control)".
-
-Based on the argument above, we have compiled a set hypotheses as shown below.
-
-$$
-\begin{cases}
-  H_{[var]0}: \text{The importance of effect by [var] does not differ between male and female.} \\
-  H_{[var]1}: H_{[var]0} \text{ is not true.} \\
-\end{cases}
-$$
-
-We will pulg in "CHILDLT6", "EFACT1", "EFACT7", "COMMTIME", "EFACT9", "MANDPRV", "UNAWARE", "JOBHOME", "MANCONST", "JOBCONST", "TECHCONS" and "CSO9FT2" into this hypothesis. If there is a significant difference, we will further examine if the importance is to the same direction (e.g., positive / negative for both gender), opposite direction and the magnitude of coefficients.
-
-### Preliminary Analysis
-
-To begin with, we initialize the first MA and FE models, namely FMA and FFE model with all the 12 variables referred above and some common variables such as age group and income level, and bias term. Before feeding the variable into computation, though, we will review the distribution of the variables and make a pre-elimination of the variables.
-
-The following figures illustrates the distribution of each variable with two groups of gender.
-
-<Bar label={'CHILDLT6'} title={"Figure 4.1. Distribution"} caption={"Green: Male, Cyan: Female"}/>
-<Bar label={'EFACT1'  }  title={"Figure 4.2. Distribution"} />
-<Bar label={'EFACT7'  } title={"Figure 4.3. Distribution"} />
-<Bar label={'COMMTIME'} title={"Figure 4.4. Distribution"} />
-<Bar label={'EFACT9'  } title={"Figure 4.5. Distribution"} />
-<Bar label={'MANDPRV' } title={"Figure 4.6. Distribution"} />
-<Bar label={'UNAWARE' } title={"Figure 4.7. Distribution"} />
-<Bar label={'JOBHOME' } title={"Figure 4.8. Distribution"} />
-<Bar label={'MANCONST'} title={"Figure 4.9. Distribution"} />
-<Bar label={'JOBCONST'} title={"Figure 4.10. Distribution"} />
-<Bar label={'TECHCONS'} title={"Figure 4.11. Distribution"} />
-<Bar label={'CSO9FT2' } title={"Figure 4.12. Distribution"} />
-<Bar label={'F8AGEGR' } title={"Figure 4.13. Distribution"} caption={"2: 21-30, 3: 31-40, 4: 41-50, 5:51-60, 6: 61+"}/>
-<Bar label={'F16INCOM'} title={"Figure 4.14. Distribution"} caption={"1: Less thann $15,000, 2: $15,000-34,999, 3: $35,000-54,999, 4: $55,000-74,999, 5:$75,000-94,999, 6: $95,000+"}/>
-
-Looking at the distributions, clearly, variable "MANDPRV (Management disapproves)" is always zero so that we remove this from the further analysis. Among other variables, "UNAWARE (Person is unaware of telecommuting)" is highly unbalanced. Since the observation of true in male group is much less than 30, it is recommended to remove this variable to prevent an overfitting to those true samples. (Also, with this small sample size the assumption that the t-distribution of the sample can be approximated by a normal distribution will be violated. [4])
-
-The three discrete variables, "TECHCONS (Technology constraint)", "F8AGEGR (Age group)" and "F16INCOM (Income level)" need to be re-classified because some categoris of them (e.g., the lowest income level) have small sample size. We here classify them as the following method.
-
-$$
-\text{TECHCONSB} =
-\begin{cases}
-  0 ~~ if ~ \text{TECHCONS} = 0 \\
-  1 ~~ otherwise
-\end{cases}
-$$
-
-$$
-\text{AGE} =
-\begin{cases}
-  0 ~~ if ~ \text{F8AGEGR} <= 3 ~ \text{(i.e., age is less than 41)} \\
-  1 ~~ otherwise
-\end{cases}
-$$
-
-$$
-\text{INCOM} =
-\begin{cases}
-  0 ~~ if ~ \text{F16INCOM} <= 3 ~ \text{(i.e., annual HH income is less than \$55,000)} \\
-  1 ~~ otherwise
-\end{cases}
-$$
