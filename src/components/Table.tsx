@@ -139,7 +139,7 @@ const Table: React.FC<Props> = (props: Props) => {
             <Tex math={'\\mathcal{L}_{(EL)}'}></Tex>
             {': '}
             {(
-              Math.log(props.lastState.bias.length + 1) * props.dataLength
+              -Math.log(props.lastState.bias.length + 1) * props.dataLength
             ).toFixed(3)}
           </TableCell>
           <TableCell>

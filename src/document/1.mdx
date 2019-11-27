@@ -2,5 +2,35 @@ import Regression from '../components/Regression';
 
 # 1.
 
+## Car-Base
+
+The details of our market share (MS) model with the base alternative of car is:
+
 <Regression inputs={[]} base={2} table={{ title: 'hoge' }} />
+
+The coefficient of alternative specific varibles (ASCs) tells us that the chance where a person will choose bus or walk is respectively
+
+$$
+\text{Bus: } \exp{(-1.694)} / \exp{(0)} = 18.38%
+\text{Walk: } \exp{(-1.491)} / \exp{(0)} = 22.51%
+$$
+
+of that of choosing car mode.
+
+The log-likelihood observed a decent increase from the one of equal likely (EL) model. Based on a chi-squared distribution with 1 degree of freedom, the probability that the model has no difference from the EL model (null hypothesis) is:
+
+$$
+p = 1 - \int_{-\infty}^{- 382.217 + 525.317}\chi(x)dx = \int_{-\infty}^{143.1}\chi(x)dx < 1.0 \times e^{-16}
+$$
+
+with which we can reject the null hypothesis and conclude the MS model is significantly better than the EL model.
+
+## Walk-Base
+
+Another MS model has the base of walk mode. Its details are display in the table below.
+
 <Regression inputs={[]} base={1} table={{ title: 'hoge' }} />
+
+Because the coefficient of the ASCs is now representing the odds whose denominator is walk mode, the ASC of car mode has become positive. The absolute number of coefficients of ASC in walk and car in the two models should match, but here it is alightly different due to the computation error and threshold for the termination of learning process. The coefficient of the bus mode is almost same to the difference between that of bus and walk in the previous model.
+
+The log-likelihood and pseudo r-squared are almost equal to those in the previous model in the same manner.
