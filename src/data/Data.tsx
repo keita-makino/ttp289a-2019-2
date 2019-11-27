@@ -50,8 +50,8 @@ export const location = {
   rankpref: [1, 2, 3],
   freq: [1, 2, 3],
   excpt: [1, 2, 3],
-  timev: [1, 2, 3],
-  timew: [1, 2, 3],
+  timev: [1, 3],
+  timew: [2],
   apd: [1, 2, 3],
   op: [1, 2, 3],
   opb: [1],
@@ -81,7 +81,17 @@ export const location = {
   busseat: [1, 2, 3],
   bstdt: [1, 2, 3],
   cost: [1, 2, 3],
-  nmisop: [1, 2, 3]
+  nmisop: [1, 2, 3],
+  educl: [1, 2, 3],
+  educm: [1, 2, 3],
+  educh: [1, 2, 3],
+  incomeb: [1, 2, 3],
+  agelbw: [1, 2],
+  agembw: [1, 2],
+  agehbw: [1, 2],
+  agelc: [3],
+  agemc: [3],
+  agehc: [3]
 };
 
 export const dictionary = {
@@ -125,7 +135,17 @@ export const dictionary = {
   busseat: 'Probability of Seat in Bus',
   bstdt: 'Bus Going to Downtown Evanston',
   cost: 'Scaled Value of Cost',
-  nmisop: 'Number of Missing Opinion Questions'
+  nmisop: 'Number of Missing Opinion Questions',
+  educl: 'Low education',
+  educm: 'Middle education',
+  educh: 'High education',
+  incomeb: 'Income level',
+  agelbw: 'Low age (bus/walk)',
+  agembw: 'Middle age (bus/walk)',
+  agehbw: 'High age (bus/walk)',
+  agelc: 'Low age (car)',
+  agemc: 'Middle age (car)',
+  agehc: 'High age (car)'
 };
 
 export type Input = keyof Data;

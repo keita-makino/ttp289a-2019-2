@@ -1,0 +1,148 @@
+import Regression from '../components/Regression';
+import GetPVal from '../components/GetPVal';
+
+# 6.
+
+In this section, we will develop several models that may provide the best result (i.e., the best explanation of the dependent variable).
+
+## Initial Model
+
+First of all, we would introduce a full model (FL) that has some additional variables regarding the travel and social status. As previous studies (and the lecture) have been pointed out, the travel time is one of the most important factors in mode choice. Also, the number of stops would be highly associated with the mode which the traveler would take.  
+In several social demographics available in the dataset, we have selected the gender, marriage status, education, household income and age. Because some of them are neither continuous or binary variable, we then made a conversion which made some variables into a dummy variable. The following table summarize the conversion process.
+
+<b>Table 9. Variable Conversion</b>
+
+| Variable     | Value in Dataset | Stands for                                                                                                                                                                   | Value in Estimation                                                                                                                             |
+| ------------ | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Gender       | 1 or 2           | 1 = Male, 2 = Female                                                                                                                                                         | 0 = Male, 1 = Female                                                                                                                            |
+| Married      | 1 or 2           | 1 = Married, 2 = Not Married                                                                                                                                                 | 0 = Not Married, 1 = Married                                                                                                                    |
+| Education    | 0 to 7           | 0 = (No Specification), <br /> 1 = Elementary, 2 = Some High School, 3 = High School, <br /> 4 = Some College, 5 = College,<br /> 6 = Some Graduate, 7 = Graduate            | Dummy Variable <br /> educl = (education) < 4 <br /> educm = 3 < (education) < 6 <br /> educh = (education) > 5                                 |
+| Income Level | 0 to 6           | 0 = (No Specification), <br /> 1 = Under $10,000, 2 = $10,001 - $15,000, <br /> 3 = $15,001 - $20,000, 4 = $20,001 - $25,000, <br /> 5 = $25,001 - $50,000, 6 = Over $50,001 | 0 = (income) < 4, 1 = (income) > 3                                                                                                              |
+| Age          | 1 to 6           | (No Specification)                                                                                                                                                           | Dummy Variable <br /> agel[x] = (age) < 3 <br /> agem[x] = 2 < (age) < 5 <br /> ageh[x] = (age) > 4 <br /> [x]: bw (bus/walk) or c (car) as ASV |
+
+Note that there were many observations that had zeros in income or education whose meanings were not specified in the attachment document. We did not truncate them from the model evaluation and instead treated as the minimum (i.e., 1) category of the variable.
+
+Among the variables tabulated above, we have converted the age factor into two alternative specific variables, because we can expect that the effect of being older is much more significant in using public transit or walk to the destination. Therefore, for example, "agelbw" stands for the dummy variable for bus and walk mode, representing that the individual is age group 1 or 2 (younger), and "agelc" is the same attribute for car mode.
+
+Using these variables, we computed the FL model and obtained the following results.
+
+<Regression
+  inputs={[
+    'timev',
+    'timew',
+    'apd',
+    'opb',
+    'opw',
+    'opc',
+    'f1gensvc',
+    'f2convac',
+    'f3psych',
+    'cost',
+    'stop',
+    'sex',
+    'married',
+    'educl',
+    'educm',
+    'educh',
+    'incomeb',
+    'agelbw',
+    'agembw',
+    'agehbw',
+    'agelc',
+    'agemc',
+    'agehc'
+  ]}
+  base={2}
+  table={{ title: 'Table 10. FL Model' }}
+/>
+
+We can easily see there are many problems in the first model. First of all, the t-statistic of age has been identified as an invalid value, which is equivalent to the singularity error in R coding. Also, the most of the additional variables result in a zero value of t-statistic, which means that the variable does not have any association with the dependent variable (i.e, extremely large value of standard error).
+
+To examine whether the invalidity of age variable caused any computation errors in the standard error or t-statistic, we tested an alternative model without age variable.
+
+<Regression
+  inputs={[
+    'timev',
+    'timew',
+    'apd',
+    'opb',
+    'opw',
+    'opc',
+    'f1gensvc',
+    'f2convac',
+    'f3psych',
+    'cost',
+    'stop',
+    'sex',
+    'married',
+    'educl',
+    'educm',
+    'educh',
+    'incomeb'
+  ]}
+  base={2}
+  table={{ title: "Table 10'. FL Model without Age" }}
+/>
+
+The result is quite similar.
+
+## Second Model
+
+Given this, we have removed the social demographic variables (gender, married, education, income, age), generalized cost and number of stops in the trip. The result of the second (SC) model is:
+
+<Regression
+  inputs={[
+    'timev',
+    'timew',
+    'apd',
+    'opb',
+    'opw',
+    'opc',
+    'f1gensvc',
+    'f2convac',
+    'f3psych'
+  ]}
+  base={2}
+  table={{ title: 'Table 11. SC Model' }}
+/>
+
+## Final Model
+
+In the second model, the variable of 3-factor score 1 and 3 were not determined as significant variables. Also, opinion about bus mode did not show a significance in the model, so we will remove these variables. There could be some argument about the treatment of opinion about car mode. In section 5, we have concluded that the opinion about walk is much more important than that about car mode. However, the p-value of the chi-squared test which examined the importance of opinion about car mode (section 5 $p(3)$) was smaller than 0.1, which is significant with 90% confidence level. Therefore, we will include this variable and see if it has a significance in the final model.
+
+Given the argument above, our final (FA) model is:
+
+export const validators = ['timev', 'timew', 'apd', 'opw', 'opc', 'f2convac'];
+
+<Regression
+  inputs={validators}
+  base={2}
+  table={{ title: 'Table 12. FA Model' }}
+/>
+
+Now all the variable except for the ASCs became significant with more than 95% confidence level. It implies that those variables have made a quite large amount of explanation about the dependent variable. In other words, the estimation of mode choice of the individual can be mostly done by the explanatory variables and ASCs are not really needed anymore (But those should be included in the model as the intercept).
+
+The interpretation of each coefficients and variable are quite straightforward. As we have discussed in section 3, the availability of car in household is very significant in mode choice. Also, the opinion about the easiness of the mode have a certain importance. Additionally, we can explain that the travel time is one of the important factor regardless if it is in-vehicle or walking time. This confirms the result already provided various previous studies. Comparing the magnitude of the coefficients, it seems that the travel time and opinion about the walk and car mode have slightly more importance than others, but all variables are still important and significant overall.
+
+About the performance of this model, firstly we have achieved the highest adjusted rho-squared value in this study. It means the combination of the variables have the highest efficiency to explain the dependent variable.
+
+Additionally, to test whether this model is significantly better than the MS model, we introduce the details of the MS model with the same dataset.
+
+<Regression
+  inputs={[]}
+  validators={validators}
+  base={2}
+  table={{ title: 'Table 13. MS Model with FA Model Data' }}
+/>
+
+Given the log-likelihood of the models, we can compute the chi-squared statistic as $-2(\mathcal{L}_{MS} - \mathcal{L}_{FA}) = -2 \times (-259.191 + 163.216) = 191.95$.
+
+If the null hypothesis, which states that the performance of FA model is same to that of MS model with the same dataset, the probability for this statistic to take the value is:
+
+<GetPVal x={191.95} k={8} />
+
+$$
+p = 1 - \int_{-\infty}^{191.95}\chi(x,8)dx < 1.0 \times 10^{-16}
+$$
+
+Therefore, we can conclude that the FA model will provide the best performance in estimation of the dependent variable.

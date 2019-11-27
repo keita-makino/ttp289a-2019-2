@@ -2,6 +2,8 @@ import Regression from '../components/Regression';
 
 # 4.
 
+By using walk mode as the base, we obtain the following model.
+
 <Regression
   inputs={[
     'apd',
@@ -14,5 +16,7 @@ import Regression from '../components/Regression';
     'cost'
   ]}
   base={1}
-  table={{ title: 'hoge' }}
+  table={{ title: 'Table 5. BS Model (Walk)' }}
 />
+
+Overall the coefficients does not change a lot. However, ASCs have observed a large difference from the car-based model, which has been caused by the same reason explained in section 1.

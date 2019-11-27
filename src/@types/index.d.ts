@@ -38,3 +38,4 @@ declare module '@mdx-js/react' {
 declare module '@matejmazur/react-katex';
 declare module 'jstat';
 declare module '@mdx-js/react';
+declare module 'mathjs';

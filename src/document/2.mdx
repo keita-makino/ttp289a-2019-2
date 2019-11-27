@@ -1,26 +1,27 @@
 # 2.
 
-### Equal Likely Model
+## Equal Likely Model
 
 $$
 \begin{aligned}
-  \mathcal{L}(0) &= \sum_{i=1}^{N} (y_W ln(P_W(n)) + y_B ln(P_B(n)) + y_C ln(P_B(n))) \\
-  &= \sum_{i=1}^{N} (y_W ln(1/3) + y_B ln(1/3) + y_C ln(1/3)) \\
+  \mathcal{L}_{EL} &= \sum_{i=1}^{N} (y_B ln(P_B(n)) + y_W ln(P_W(n)) + y_C ln(P_C(n))) \\
+  &= \sum_{i=1}^{N} (y_B ln(1/3) + y_W ln(1/3) + y_C ln(1/3)) \\
   &= \sum_{i=1}^{N} ln(1/3) \\
   &= ln(1/3) N \\
-  &= -525.137
+  &= -525.137 \text{ (in Evanson dataset. It matches the result shown in section.)}
 \end{aligned}
 $$
 
-### Market Share Model
+## Market Share Model
 
 $$
 \begin{aligned}
-  \mathcal{L}(MS) &= \sum_{i=1}^{N} (y_W ln(P_W(n)) + y_B ln(P_B(n)) + y_C ln(P_B(n))) \\
+  \mathcal{L}_{MS} &= \sum_{i=1}^{N} (y_B ln(P_B(n)) + y_W ln(P_W(n)) + y_C ln(P_B(n))) \\
+  &= \sum_{i=1}^{N} (y_B ln(N_B / N) + y_W ln(N_W / N) + y_C ln(N_C / N)) \\
+  &= \sum_{i=1}^{N} (y_B ln(N_B) + y_W ln(N_W) + y_C ln(N_C) - (y_b + y_W + y_C)ln(N)) \\
+  &= \sum_{i=1}^{N} (y_B ln(N_B) + y_W ln(N_W) + y_C ln(N_C)) - ln(N)\\
   &= 62 \times ln(62/478) + 76 \times ln(76/478) + 340 \times ln(340/478) \\
   &= -126.633 - 139.755 - 115.826\\
-  &= -382.214
+  &= -382.214 \text{ (in Evanson dataset. It matches the result shown in section.)}
 \end{aligned}
 $$
-
-These numbers match to the programmatically computed number in section 1.

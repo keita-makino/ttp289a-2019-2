@@ -1,4 +1,5 @@
 import Regression from '../components/Regression';
+import GetPVal from '../components/GetPVal';
 
 export const validators = [
   'apd',
@@ -13,23 +14,79 @@ export const validators = [
 
 # 5.
 
-The following tables displays the constraint models which respectively omits "opb", "opw" and "opc".
+The following tables displays the constraint models which respectively omits "opb", "opw" and "opc", namely restricted bus (RB) model, restricted walk (RW) model and restricted car (RC) model. By examining the performance of these and the BS model, we can infer whether any of the three variables is significantly more important than others.
 
 <Regression
   inputs={['apd', 'opw', 'opc', 'f1gensvc', 'f2convac', 'f3psych', 'cost']}
   validators={validators}
   base={2}
-  table={{ title: 'hoge' }}
+  table={{ title: 'Table 6. RB Model' }}
 />
 <Regression
   inputs={['apd', 'opb', 'opc', 'f1gensvc', 'f2convac', 'f3psych', 'cost']}
   validators={validators}
   base={2}
-  table={{ title: 'hoge' }}
+  table={{ title: 'Table 7. RW Model' }}
 />
 <Regression
   inputs={['apd', 'opb', 'opw', 'f1gensvc', 'f2convac', 'f3psych', 'cost']}
   validators={validators}
   base={2}
-  table={{ title: 'hoge' }}
+  table={{ title: 'Table 8. RC Model' }}
 />
+
+There, our set of hypotheses can be denoted as:
+
+$$
+\begin{cases}
+  H_0: \text{opb, opw, and opc are equally important in estimation} \\
+  H_1: \text{otherwise}
+\end{cases}
+$$
+
+To test this hypothesis, we can perform a set of chi-squared test for each pair of restricted model and unrestricted. The sub-hypotheses can be written in the following forms:
+
+$$
+\begin{cases}
+  H1_0: \text{The performance of BS model is same to RB model} \\
+  H1_1: \text{otherwise}
+\end{cases}
+$$
+
+$$
+\begin{cases}
+  H2_0: \text{The performance of BS model is same to RW model} \\
+  H2_1: \text{otherwise}
+\end{cases}
+$$
+
+$$
+\begin{cases}
+  H3_0: \text{The performance of BS model is same to RC model} \\
+  H3_1: \text{otherwise}
+\end{cases}
+$$
+
+Using the chi-squared statistic, the result chi-squared tests are:
+
+<GetPVal x={2.46} k={1} />
+
+$$
+p(1) = 1 - \int_{-\infty}^{-2(\mathcal{L}_{RB} - \mathcal{L}_{BS})}\chi(x,1)dx = 1 - \int_{-\infty}^{2.460}\chi(x,1)dx = 0.117
+$$
+
+<GetPVal x={13.356} k={1} />
+
+$$
+p(2) = 1 - \int_{-\infty}^{-2(\mathcal{L}_{RW} - \mathcal{L}_{BS})}\chi(x,1)dx  1 - \int_{-\infty}^{13.356}\chi(x,1)dx = 2.58 \times 10^{-4}
+$$
+
+<GetPVal x={2.776} k={1} />
+
+$$
+p(3) = 1 - \int_{-\infty}^{-2(\mathcal{L}_{RC} - \mathcal{L}_{BS})}\chi(x,1)dx  1 - \int_{-\infty}^{2.776}\chi(x,8)dx = 0.096
+$$
+
+where $p(1),p(2)$ and $p(3)$ respectively stands for the probability that the corresponding statistic takes the value in the chi-squared distribution with 1 degree of freedom under the null hypothesis. As a result, we can conclude that the variable "opw" is way more important than the others and we cannot treat them as one variable (i.e., a generic variable).
+
+Also, looking at the coefficients of other variables, we can see that most of the explanatory variables exhibits a similar result. However, the ASCs have been largely changed, typically when we remove the opinion about walk mode from the model. (i.e., ASC in the BS model were $bus: 0.208, walk:-0.603$ but in RW model $bus: 0.373, walk:0.216$). This is because the RW model has lost a large ability of explaining the mode choice, especially the estimation of walk mode. We can interpret that since the other variables are generic, the model has now started to rely on the ASC to explain the market share. It does not necessarily make the correct estimation, but at least will make the number of estimated mode choice matches to the number of actual mode choice.

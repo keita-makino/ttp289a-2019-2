@@ -1,4 +1,5 @@
 import Regression from '../components/Regression';
+import GetPVal from '../components/GetPVal';
 
 # 3.
 
@@ -16,7 +17,46 @@ Below is the result of our basic (BS) model.
     'cost'
   ]}
   base={2}
-  table={{ title: 'hoge' }}
+  table={{ title: 'Table 3. BS Model' }}
 />
 
-Note that coefficients which span the three columns represents that the corresponding variable is a generic variable. Looking at the result, we can see that the most of variables exhibit a significance with more than 95% confidence level.
+Note that the sample size is now 419. It is because we have truncated records which have missing values in any of these variables in the dataset. (e.g., -9 in "apd", which stands for the driver per car is apparently invalid.) Also, note that coefficients which span the three columns represents that the corresponding variable is a generic variable. Looking at the result, we can see that the most of variables exhibit a significance with more than 95% confidence level.
+
+The ASC for bus alternative has been changed its sign from the (car-based) MS model. The reason is that the variables in the inner product of coefficients and the variable for bus-mode estimation has a tendency to be lower than zero. The positive ASC in some sense offset this effect. Note that however, this positive ASC does not mean that the probability of choosing bus is generally higher than that of choosing car.
+
+About other variables, we can infer that the cost is not significant, which is somehow counterintuitive. Also, there have been a difference between the 3-factor scores, which have been evaluated through several survey topics. As the third factor refers to individual's concern about comfort or safety, it implies that, at least in Evanson in 1977, that kind of safety factors was not important for the mode choice. On the other hand, the first factor (easiness of using the mode) and second factor (availability of the mode) have been determined as the important factors, which is coherent with our common sense. Opinion about each mode resulted in somehow different significance. Overall, it seems that the opinion about buses are not relevant about the mode choice. It might be because those who need to rely on public transit would either like or dislike the transit system (but still need to use it). Obviously, the availability of car in the household has exhibited a high t-value, which matches to our understanding of relying on a car in daily life.
+
+## Performance Test
+
+Let's examine the performance change from the MS model. The MS model **derived with the same dataset (N=419)** is:
+
+<Regression
+  inputs={[]}
+  validators={[
+    'apd',
+    'opb',
+    'opw',
+    'opc',
+    'f1gensvc',
+    'f2convac',
+    'f3psych',
+    'cost'
+  ]}
+  base={2}
+  table={{ title: 'Table 4. MS Model with BS Model Data' }}
+/>
+
+Overall, the BS model seems to have a better performance as we see a large increase in the adjusted rho-squared. We can further test the performance of this model by holding a chi-squared test. Given this we have observed an increase in the log-likelihood from MS to BS model by $-219.464 + 326.193 = 106.729$. Consider that the additional variables we have introduced is 8, the probability where this BS model does not differ from the MS model is:
+
+<GetPVal x={106.725} k={8} />
+
+$$
+p = 1 - \int_{-\infty}^{106.729}\chi(x,8)dx < 1.0 \times 10^{-16}
+$$
+
+The image below illustrates the comparison between the information provided by EL model, MS model, BS model and a hypothetical perfect model.
+
+<div>
+  <img src={require('../data/image1.png')} width={'100%'} />
+  <b>Figure 1. Difference of information between models.</b>
+</div>

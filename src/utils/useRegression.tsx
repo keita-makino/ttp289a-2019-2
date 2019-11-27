@@ -1,6 +1,7 @@
 import * as tf from '@tensorflow/tfjs';
 import { Data, Input } from '../data/Data';
 import { useEffect, useState } from 'react';
+import { sqrt, multiply, inv, diag } from 'mathjs';
 
 export type History = {
   weights: number[];
@@ -90,7 +91,7 @@ const useRegression = (
             .sum();
         }) as tf.Tensor<tf.Rank.R0>;
       };
-      const optimizer = tf.train.adam(0.2);
+      const optimizer = tf.train.adam(0.03);
 
       for (let index = 0; index < 1000; index++) {
         optimizer.minimize(
@@ -129,43 +130,60 @@ const useRegression = (
         return inputs.length === 0 ? eyes : eyes.concat(x);
       });
 
-      // xs is [featureLength + dim -1] x [sampleSize x dim] 2d array
-      // [[1   , 0   , 0   , 1   , 0   , 0   , ..., 1   , 0   , 0   ],
-      //  [0   , 1   , 0   , 0   , 1   , 0   , ..., 0   , 1   , 0   ],
-      //  [x111, x112, x113, x211, x211, x211, ..., xn11, xn12, xn13],
-      //  [x121, x122, x123, x221, x221, x221, ..., xn21, xn22, xn23],
-      //  ...,
-      //  [x1k1, x1k2, x1k3, x2k1, x2k1, x2k1, ..., xnk1, xnk2, xnk3]]
       //
-      // index is x(individual)(feature)(alternative)
 
       xs.print();
 
-      Array(dim - 1)
+      const hessian = Array(dim - 1 + inputs.length)
         .fill(0)
-        .concat([...inputs]) // secure an array for loop
-        .map((input, index) => {
-          stats.coefSds.push(
-            // push s.e. to return array
+        .map(item => Array(dim - 1 + inputs.length).fill(0));
+
+      console.log(hessian);
+      console.log(
+        Array(dim - 1 + inputs.length)
+          .fill(0)
+          .map(item => Array(dim - 1 + inputs.length).fill(0))
+      );
+      hessian.map((input, index, array) => {
+        for (let index2 = 0; index2 < array.length; index2++) {
+          const mat = tf.tidy(() =>
             xs
-              .slice([index, 0], [1, dataLength]) // get a vector for kth feature (or ASC)
-              .as2D(sampleLength, dim) // convert to 2d
-              .mul(tf.tensor(returnValue.lastState.estimate)) // multiply by probability Pn(j)
-              .sum(1) // get the row-wise sum (first summation)
-              .as2D(sampleLength, 1) // convert
-              .tile([1, dim]) // duplicate for further calculation
+              .slice([index, 0], [1, dataLength])
+              .as2D(sampleLength, dim)
+              .mul(tf.tensor(returnValue.lastState.estimate))
+              .sum(1)
+              .as2D(sampleLength, 1)
+              .tile([1, dim])
               .mul(-1)
               .add(
                 xs.slice([index, 0], [1, dataLength]).as2D(sampleLength, dim)
-              ) // at this point we evaluate xink - \sum_j{xjnk Pn(j)}
-              .pow(2) // square
-              .as1D() // convert
-              .mul(tf.tensor(returnValue.lastState.estimate).as1D()) // multiply by the probability Pn(i)
-              .sum() // sum
-              .rsqrt() //root
-              .dataSync()[0] // return
+              )
+              .mul(
+                xs
+                  .slice([index2, 0], [1, dataLength])
+                  .as2D(sampleLength, dim)
+                  .mul(tf.tensor(returnValue.lastState.estimate))
+                  .sum(1)
+                  .as2D(sampleLength, 1)
+                  .tile([1, dim])
+                  .mul(-1)
+                  .add(
+                    xs
+                      .slice([index2, 0], [1, dataLength])
+                      .as2D(sampleLength, dim)
+                  )
+              )
+              .as1D()
+              .mul(tf.tensor(returnValue.lastState.estimate).as1D())
+              .sum()
+              .mul(-1)
           );
-        });
+          hessian[index][index2] = mat.dataSync()[0];
+          mat.dispose();
+        }
+      });
+
+      returnValue.stats.coefSds = diag(sqrt(multiply(inv(hessian), -1)));
 
       const logLikelihood = -returnValue.lastState.loss;
       const logLikelihoodEL = -sampleLength * Math.log(dim);
