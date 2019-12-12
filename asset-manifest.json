@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/ttp289a-2019-1/static/css/main.a7ef72b3.chunk.css",
+    "main.js": "/ttp289a-2019-1/static/js/main.c2886896.chunk.js",
+    "main.js.map": "/ttp289a-2019-1/static/js/main.c2886896.chunk.js.map",
+    "runtime-main.js": "/ttp289a-2019-1/static/js/runtime-main.290753b5.js",
+    "runtime-main.js.map": "/ttp289a-2019-1/static/js/runtime-main.290753b5.js.map",
+    "static/css/2.c75fa1a2.chunk.css": "/ttp289a-2019-1/static/css/2.c75fa1a2.chunk.css",
+    "static/js/2.24037d90.chunk.js": "/ttp289a-2019-1/static/js/2.24037d90.chunk.js",
+    "static/js/2.24037d90.chunk.js.map": "/ttp289a-2019-1/static/js/2.24037d90.chunk.js.map",
+    "index.html": "/ttp289a-2019-1/index.html",
+    "precache-manifest.96819b6a0f379d97662973eb6b56a74e.js": "/ttp289a-2019-1/precache-manifest.96819b6a0f379d97662973eb6b56a74e.js",
+    "service-worker.js": "/ttp289a-2019-1/service-worker.js",
+    "static/css/2.c75fa1a2.chunk.css.map": "/ttp289a-2019-1/static/css/2.c75fa1a2.chunk.css.map",
+    "static/css/main.a7ef72b3.chunk.css.map": "/ttp289a-2019-1/static/css/main.a7ef72b3.chunk.css.map",
+    "static/media/katex.min.css": "/ttp289a-2019-1/static/media/KaTeX_Typewriter-Regular.6cc31ea5.woff2",
+    "static/media/image1.png": "/ttp289a-2019-1/static/media/image1.ec0ec8d3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.290753b5.js",
+    "static/css/2.c75fa1a2.chunk.css",
+    "static/js/2.24037d90.chunk.js",
+    "static/css/main.a7ef72b3.chunk.css",
+    "static/js/main.c2886896.chunk.js"
+  ]
+}
