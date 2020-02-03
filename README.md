@@ -2,9 +2,9 @@
 
 As a homework of TTP289A 2019 Fall: Discrete Choice Modeling.
 
-# Interactive Plots
+# Online Version
 
-Interactive plots is under development.
+You can access the online version [here](https://keita-makino.github.io/ttp289a-2019-2/).
 
 # References
 
